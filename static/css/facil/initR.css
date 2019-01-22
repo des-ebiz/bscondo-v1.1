@@ -1,0 +1,123 @@
+@charset 'utf-8';
+
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; border: none; width: 1000px; box-shadow: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-controls {}
+.bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
+#wrap .bx-wrapper .bx-controls-direction a {display: block;}
+.bx-wrapper .bx-controls-direction a {background: none; width: auto; height: auto; top: 0; margin-top: 0; z-index: 1;}
+.bx-wrapper .bx-prev {left: 20px;}
+.bx-wrapper .bx-next {right: 20px;}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+, .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
+
+.mainImg, .mainImg-m {display: block; margin: 0 auto;}
+@media (max-width: 979px) {
+	.bx-wrapper .bx-controls-direction a {width: 12px;}
+	.bx-wrapper .bx-controls-direction {margin-top: -11.5px;}
+	.bx-wrapper .bx-prev {left: 10px;}
+	.bx-wrapper .bx-next {right: 10px;}
+	
+	.main-contents.cm-s {}
+	.main-contents .d-part {margin-top: 30px;}
+	.main-contents .d-part h3 {font-size: 20px; margin-bottom: 5px; text-align: center;}
+	.main-contents .d-part h3 .title_ico {display: block; margin: 0 auto;}
+	.main-contents .d-part:first-child {margin-top: 10px;}
+	.main-contents .p-txt {font-size: 13px; text-align: center; margin-bottom: 12px; letter-spacing: -0.5px;}
+	.main-contents .basicImg {width: 100%;}
+	
+	.main-contents .bbq-part {position: relative;}
+	.main-contents .bbq-part .d-top {text-align: center; background: #faf7f5; padding: 25px 0;}
+	.main-contents .bbq-part .d-top .p-0 {font-size: 14px;}
+	.main-contents .bbq-part .d-top .p-0 .s-1 {color: #d46900;}
+	.main-contents .bbq-part .d-top h2 {font-size: 18px; font-weight: 300; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; margin-top: 5px;}
+	.main-contents .bbq-part .d-top strong {font-size: 14px; display: inline-block; line-height: 24px; padding: 0px 25px; border-top: 1px solid #b5b5b5; border-bottom: 1px solid #b5b5b5; margin-top: 10px;}
+	.main-contents .bbq-part .d-intro {background: #b88f67; padding: 15px 40px;}
+	.main-contents .bbq-part .d-intro > * {position: relative;}
+	.main-contents .bbq-part .d-intro figure img {width: 100%;}
+	.main-contents .bbq-part .d-intro .introTxt {color: #fff; padding: 15px 20px 0;}
+	.main-contents .bbq-part .d-intro .introTxt p {position: relative;}
+	.main-contents .bbq-part .d-intro .introTxt .d-mt {margin-top: 20px;}
+	.main-contents .bbq-part .d-intro .introTxt p.nth-1 {font-size: 16px; font-weight: 700; letter-spacing: 5px;}
+	.main-contents .bbq-part .d-intro .introTxt p.nth-1:after {content: ""; width: 52%; height: 1px; background: #fff; position: absolute; right: 0; top: 12px;}
+	.main-contents .bbq-part .d-intro .introTxt .nth-2 {font-size: 16px; margin-top: 10px;}
+	
+	.main-contents .bbq-part .d-intro2 figure img {width: 100%;}
+	
+	
+	.main-contents .bbq-part .d-cont, .main-contents .bbq-part .d-bottom {border: 1px solid #b88f67;}
+	
+	.main-contents .bbq-part .d-cont {color: #1b1b1b; border-top: 0; border-bottom: 0; padding-bottom: 30px;}
+	.main-contents .bbq-part .d-cont .p-row {text-align: center; padding-top: 20px; font-size: 13px; margin-bottom: -10px; color: #d56d08;}
+	.main-contents .bbq-part .d-cont .d-row {padding-top: 25px;}
+	.main-contents .bbq-part .d-cont .d-row [class*=flt-] {position: relative; box-sizing: border-box; text-align: center;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 {}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p {font-size: 16px;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-1 {position: relative;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-2 {font-size: 18px; letter-spacing: 1px; margin-top: 5px;}
+	.main-contents .bbq-part .d-cont .d-row .flt-2 {font-size: 13px; /*line-height: 30px;*/ word-break: keep-all; padding: 5px 20px;}
+	.main-contents .bbq-part .d-cont .d-row .flt-2 .s-1 {color: #d56d08;}
+    .main-contents .bbq-part .d-cont .d-row .flt-2 .bg-red {display:block; width:125px; height:18px; margin:0 auto; margin-top:5px; font-size:13px; font-weight:bold; line-height:18px; text-align:center; color:#fff; background:#c02323;}
+	
+	.main-contents .bbq-part .d-bottom {border-top: 1px solid #b5b5b5; padding: 10px 15px; font-size: 14px;}
+	.main-contents .bbq-part .d-bottom [class*=flt-] {position: relative;}
+	/*.main-contents .bbq-part .d-bottom [class*=flt-] p {line-height: 1.8;}*/
+	.main-contents .bbq-part .d-bottom .dot {position: relative; padding-left: 15px;}
+	.main-contents .bbq-part .d-bottom .dot:before {content: "※"; position: absolute; left: 0;}
+	.main-contents .bbq-part .d-bottom .pl-1 {padding-left: 13px;}
+}
+/*@media (max-width: 320px) {*/
+@media (max-device-width: 320px) {
+	.main-contents .p-txt, .main-contents .bbq-part .d-cont .d-row .flt-2 {font-size: 12px;}
+}
+@media (min-width: 980px) {
+	.bx-wrapper .bx-controls-direction {margin-top: -21.5px;}
+	
+	.main-contents.cm-s {padding-top: 30px;}
+	.main-contents .d-part {margin-top: 55px;}
+	.main-contents .d-part h3 {}
+	.main-contents .d-part:first-child {margin-top: 10px;}
+	.main-contents .p-txt {font-size: 20px; text-align: center; margin-bottom: 18px;}
+	.main-contents .basicImg {width: 100%;}
+	
+	.main-contents .bbq-part {position: relative;}
+	.main-contents .bbq-part .d-top {text-align: center; background: #faf7f5; padding: 50px 0;}
+	.main-contents .bbq-part .d-top .p-0 {font-size: 21px;}
+	.main-contents .bbq-part .d-top .p-0 .s-1 {color: #d46900;}
+	.main-contents .bbq-part .d-top h2 {font-size: 40px; font-weight: 300; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+	.main-contents .bbq-part .d-top strong {font-size: 20px; display: inline-block; line-height: 38px; padding: 1px 45px 0; border-top: 1px solid #b5b5b5; border-bottom: 1px solid #b5b5b5; margin-top: 10px; font-weight: 700;}
+	/*삭제예정*/
+	.main-contents .bbq-part .d-intro {background: #b88f67; padding: 30px 60px;}
+	.main-contents .bbq-part .d-intro > * {float: left; position: relative;}
+	.main-contents .bbq-part .d-intro .introTxt {color: #fff; width: 360px; margin-left: 60px;}
+	.main-contents .bbq-part .d-intro .introTxt p {position: relative;}
+	.main-contents .bbq-part .d-intro .introTxt .d-mt {margin-top: 50px;}
+	.main-contents .bbq-part .d-intro .introTxt p.nth-1 {font-size: 20px; font-weight: 700; letter-spacing: 10px;}
+	.main-contents .bbq-part .d-intro .introTxt p.nth-1:after {content: ""; width: 200px; height: 1px; background: #fff; position: absolute; right: 0; top: 12px;}
+	.main-contents .bbq-part .d-intro .introTxt .nth-2 {font-size: 24px; margin-top: 15px;}
+	/**/
+	.main-contents .bbq-part .d-intro2 {position: relative;}
+
+	.main-contents .bbq-part .d-cont, .main-contents .bbq-part .d-bottom {border: 1px solid #b88f67;}
+	
+	.main-contents .bbq-part .d-cont {color: #1b1b1b; border-top: 0; border-bottom: 0; padding-bottom: 30px;}
+	.main-contents .bbq-part .d-cont .p-row {text-align: center; padding-top: 20px; color: #d56d08;}
+	.main-contents .bbq-part .d-cont .d-row {padding-top: 26px;}
+	.main-contents .bbq-part .d-cont .d-row [class*=flt-] {position: relative; float: left; box-sizing: border-box;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 {width: 260px; padding-right: 30px;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p {font-size: 20px; text-align: right;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-1 {position: relative;}
+	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-2 {font-size: 24px;}
+	.main-contents .bbq-part .d-cont .d-row .flt-2 {width: 718px; padding-left: 30px; line-height: 33px; letter-spacing: -1px; word-break: keep-all; border-left: 1px solid #b5b5b5;}
+	.main-contents .bbq-part .d-cont .d-row .flt-2 .s-1 {color: #d56d08;}
+    .main-contents .bbq-part .d-cont .d-row .flt-2 .bg-red {display:inline-block; width:140px; height:22px; margin-left:10px; font-size:16px; font-weight:bold; line-height:22px; text-align:center; color:#fff; background:#c02323;}
+	
+	.main-contents .bbq-part .d-bottom {border-top: 1px solid #b5b5b5; padding: 20px 25px;}
+	.main-contents .bbq-part .d-bottom [class*=flt-] {position: relative; float: left; width: 50%;}
+	.main-contents .bbq-part .d-bottom [class*=flt-] p {line-height: 1.8; word-break: keep-all;}
+	.main-contents .bbq-part .d-bottom .dot {position: relative; padding-left: 18px;}
+	.main-contents .bbq-part .d-bottom .dot:before {content: "※"; position: absolute; left: 0;}
+	.main-contents .bbq-part .d-bottom .pl-1 {position: relative; padding-left: 16px;}
+}
+

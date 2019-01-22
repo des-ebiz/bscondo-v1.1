@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+body {font-family: "Nanum Gothic", sans-serif; }
+body, a {color: #434343;}
+
+#bs-wrap {	
+	width: 100%; position: relative; letter-spacing: -0.2px;
+	
+	font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	line-height: 1.5;
+	color: #434343;
+}
+
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; border: none; box-shadow: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-controls {z-index: 10;}
+
+
+/* 공통 Css */
+.ftfm-nt {font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;}
+.ftfm-mg {font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: -1px;}
+hr {border: none; border-top: 1px solid #c5c5c5; margin: 0;}
+
+
+.header, .container, .footer {position: relative;}
+
+.thColor {color: #d49f34;}
+.thBgColor {background: #d49f34;}
+.thColor2 {color: #cfb770;}
+.thBgColor2 {background: #cfb770;}
+.f-bd {font-weight: bold;}
+
+.mg-, .mgl, .mg-l {position: relative; display: inline-block;}
+
+.header {background: rgba(255, 255, 255, 0.75); position: fixed; top: 0; width: 100%; z-index: 50;}
+.header.type-2 {background: #eaeaea;}
+.header.shadow {box-shadow: 0 1px 8px 2px rgba(0,0,0,.2);}
+.header .hd-area {height: 52px;}
+.header .hd-area .gLogo {position: absolute; top: 9px; left: 10px;}
+.header .hd-area .gLogo > img {position: relative; width: 120px;}
+.header .navTab {position: absolute; background: none; border: 0; top: 9px; right: 9px; width: 36px; height: 34px; background: #cfb770;}
+.header .navTab.active {background: #b4932a;}
+.header .navTab > span {display: block; width: 20px; height: 3px; background: #eaeaea; border-radius: 3px; margin: 4px auto;}
+.header .navTab.active > span {
+	position: absolute; top: 12px; left: 7px; width: 22px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.header .navTab.active > span:nth-child(1) {}
+.header .navTab.active > span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.header .navTab.active > span:nth-child(3) {display: none;}
+
+.gNav {display: none; position: fixed; width: 155px; height: 100%; margin-top: 52px; top: 0; right: 0; background: #1d1b20 url(http://img.bscondo.co.kr/m/gNavBg.jpg) no-repeat top center; background-size: contain;}
+.gNav.active {display: block;}
+.gNav .gnb > li > a {display: block; position: relative; color: #fff; font-size: 13px; padding: 7px 14px;}
+.gNav .gnb > li > a:first-child {padding-top: 16px;}
+.gNav .gnb > li > a:after {
+	content: ""; display: inline-block;
+	position: relative; top: 7px; float: right; right: 3px;
+    content: ""; display: inline-block; width: 4px; height: 4px; border: 2px solid #fff;
+    -webkit-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+	
+	border-top: 0; border-left: 0;
+}
+
+.main {}
+.main .mt-52 {margin-top: 52px;}
+
+.footer {font-size: 11px; padding: 20px 0; line-height: 1.5; word-break: keep-all; background: #f4f4f4;}
+.footer, .footer a {color: #7c7c7c;}
+.footer address {width: 90%; margin: 0 auto; letter-spacing: -1.2px;}
+.footer small {display: block; margin-top: 10px; font-size: 11px; letter-spacing: -1px;}
+
+@media (max-device-width:320px) {
+	.footer .block-320 {display: block;}
+	.footer .hidden-320 {display: none;}
+}

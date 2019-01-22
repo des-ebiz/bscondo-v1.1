@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+body {font-family: "Nanum Gothic", sans-serif; }
+body, a {color: #434343;}
+
+#bs-wrap {	
+	width: 100%; position: relative; letter-spacing: -0.2px;
+	
+	font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	line-height: 1.5;
+	color: #434343;
+}
+
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; border: none; box-shadow: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-controls {z-index: 10;}
+
+
+/* 공통 Css */
+.ftfm-nt {font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;}
+.ftfm-mg {font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: -1px;}
+hr {border: none; border-top: 1px solid #c5c5c5; margin: 0;}
+
+
+.header, .container, .footer {position: relative;}
+
+.thColor {color: #d49f34;}
+.thBgColor {background: #d49f34;}
+.thColor2 {color: #cfb770;}
+.thBgColor2 {background: #cfb770;}
+.f-bd {font-weight: bold;}
+
+.mg-, .mgl, .mg-l {position: relative; display: inline-block;}
+
+.header {background: rgba(255, 255, 255, 0.75); position: fixed; top: 0; width: 100%; z-index: 50;}
+.header.type-2 {background: #eaeaea;}
+.header.shadow {box-shadow: 0 1px 8px 2px rgba(0,0,0,.2);}
+.header .hd-area {height: 52px;}
+.header .hd-area .gLogo {position: absolute; top: 9px; left: 10px;}
+.header .hd-area .gLogo > img {position: relative; width: 120px;}
+.header .navTab {position: absolute; background: none; border: 0; top: 9px; right: 9px; width: 36px; height: 34px; background: #cfb770;}
+.header .navTab.active {background: #b4932a;}
+.header .navTab > span {display: block; width: 20px; height: 3px; background: #eaeaea; border-radius: 3px; margin: 4px auto;}
+.header .navTab.active > span {
+	position: absolute; top: 12px; left: 7px; width: 22px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.header .navTab.active > span:nth-child(1) {}
+.header .navTab.active > span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.header .navTab.active > span:nth-child(3) {display: none;}
+
+.gNav {display: none; position: fixed; width: 155px; height: 100%; margin-top: 52px; top: 0; right: 0; background: #1d1b20 url(http://img.bscondo.co.kr/m/gNavBg.jpg) no-repeat top center; background-size: contain;}
+.gNav.active {display: block;}
+.gNav .gnb > li > a {display: block; position: relative; color: #fff; font-size: 13px; padding: 7px 14px;}
+.gNav .gnb > li > a:first-child {padding-top: 16px;}
+.gNav .gnb > li > a:after {
+	content: ""; display: inline-block;
+	position: relative; top: 7px; float: right; right: 3px;
+    content: ""; display: inline-block; width: 4px; height: 4px; border: 2px solid #fff;
+    -webkit-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+	
+	border-top: 0; border-left: 0;
+}
+
+.main {}
+.main .mt-52 {margin-top: 52px;}
+
+/*푸터 영역*/
+/*.footer {font-size: 11px; padding: 20px 0; line-height: 1.5; word-break: keep-all; background: #f4f4f4;}
+.footer, .footer a {color: #7c7c7c;}
+.footer address {width: 90%; margin: 0 auto; letter-spacing: -1.2px;}
+.footer small {display: block; margin-top: 10px; font-size: 11px; letter-spacing: -1px;}
+
+@media (max-device-width:320px) {
+	.footer .block-320 {display: block;}
+	.footer .hidden-320 {display: none;}
+}*/
+.footer {background: #323232; padding: 0px 0 45px 0px;}
+.footer .container {position: relative; width: 96%; margin: 0 auto;}
+.footer .container > div {position: relative; color: #cdcdcd;}
+.footer .f_menu {padding: 10px 0;}
+.footer .f_menu > li {position: relative; display: inline-block; margin-left: 24px;}
+.footer .f_menu > li:before {position: absolute; top: 6px; left: -14px; content: ""; display: inline-block; width: 1px; height: 14px; background: #cdcdcd;}
+.footer .f_menu > li:first-child {margin-left: 0px;}
+.footer .f_menu > li:first-child:before {display: none;}
+.footer .f_menu > li > a {color: #fff; font-size: 13px;}
+.footer .flt-1 {margin-top: 12px;}
+.footer .flt-1 .f-logo {position: relative; top: 5px; width: 84px;}
+.footer .flt-1 img {position: relative; display: block;}
+.footer .flt-2 address {line-height: 1.4; font-size: 13px; margin-top: 10px;}
+.footer .flt-2 address p.mt {}
+.footer .flt-2 address .i-l {display: block;}
+
+.footer .cf-box {font-family: "Nanum Gothic", sans-serif; color: #fff; width: 100%;}
+.footer .cf-box .p-0 {font-size: 15px;}
+.footer .cf-in {position: relative; width: 100%; font-size: 0;}
+.footer .cf-in .callFor {position: relative; text-align: center; display: inline-block; width: 32%; vertical-align: top; margin-top: 10px; margin-left: 0.33%; border: 1px solid #636363; border-radius: 2px; padding: 0; color: #fff; min-height: 125px;}
+.footer .cf-in .callFor.cf1 {margin-left: 0; width: 33%;}
+.footer .cf-in .callFor.cf2 {/*width: 32%;*/}
+.footer .cf-in .callFor.cf0 {display: none;}
+.footer .cf-in .callFor > span {display: block; width: 100%;}
+.footer .cf-in .s1, .footer .cf-in .s3  {font-size: 14px;  line-height: 28px; font-weight: 700;}
+.footer .cf-in .s3 {margin-top: -2px; letter-spacing: -0.5px;}
+.footer .cf-in .s3 > img {display: none;}
+.footer .cf-in .mg- {width: 100%; height: 1px; background: #636363;}
+.footer .cf-in .s1-2  {font-size: 12px; line-height: 16px; margin-top: 5px; word-break: keep-all;}
+.footer .cf-in .callFor > .s1-2:last-child {margin-top: -2px; margin-bottom: 3px; letter-spacing: -2px !important; font-size: 11px; font-family: "Dotum", sans-serif;}
+
+@media (max-width: 767px) {
+	.xs-block {display: block !important;}
+	.xs-hidden {display: none !important;}
+}
+@media (max-device-width: 320px) {
+	.footer .cf-in .s3 {letter-spacing: -1px; line-height: 16px;  margin: 3px auto;}
+	.footer .cf-in .callFor > .s1-2:last-child {letter-spacing: -1px;}
+}
+
+	
+.layer-pop-bg {position: fixed; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.privacy-bg, .privacy-bg .cm-s {display: none; color: #424242;}
+.privacy-bg .cm-s {position: absolute; width: 350px; height: 370px; position: absolute; top: 50%; margin-top: -185px; left: 50%; margin-left: -175px; background: #fff;}
+.privacy-bg .cm-s .d-top {height: 36px; background: #ad825d; color: #FFF; font-size: 15px;}
+.privacy-bg .cm-s .d-top strong {display: inline-block; position: relative; top: 10px; left: 10px;}
+.privacy-bg .cm-s .d-top .a-x {position: absolute; display: inline-block; height: 36px; width: 36px; right: 0px; top: 0; background: #ad825d;}
+.privacy-bg .cm-s .d-top .a-x:before, .privacy-bg .cm-s .d-top .a-x:after {background: #fff; height: 20px; left: 18px; top: 8px;}
+.privacy-bg .cm-s .d-cont {height: 334px; overflow: auto; padding: 10px 8px 10px 10px; font-size: 13px; line-height: 1.4; word-break: keep-all; box-sizing: border-box;}
+.privacy-bg .cm-s .tablepri {border: 1px solid #000; width: auto; line-height: 1.5em; margin-top: 10px; letter-spacing: -0.2px;}
+.privacy-bg .cm-s .tablepri th, .privacy-bg .cm-s .tablepri td {padding: 0 5px;}
+.privacy-bg .cm-s .privacy {font-weight: bold;}
+.privacy-bg .cm-s .d-cont .title {display: block; margin-top: 10px;}
+.privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
+	.term-warp {}	
+	
+
+@media (max-device-width: 320px) {
+	.layer-pop-bg {position: fixed; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+	.footer .cf-in .s3 {letter-spacing: -1px; line-height: 16px;  margin: 3px auto;}
+	.footer .cf-in .callFor > .s1-2:last-child {letter-spacing: -1px;}
+	
+	.privacy-bg .cm-s {width: 310px; margin-left: -155px;}
+}

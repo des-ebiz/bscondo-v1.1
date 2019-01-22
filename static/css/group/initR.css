@@ -1,0 +1,308 @@
+@charset 'utf-8';
+
+
+/* 20180320_접수완료 레이어 팝업_다솜 */
+.group-popup {z-index:9999; display:none; position:fixed; box-sizing:border-box; width:100%; height:100%; top:0; left:0; background:rgba(0, 0, 0, 0.5)}
+.group-popup .popup-wrap {position:relative; max-width:600px; margin:0 auto; top:50%; margin-top:-200px;}
+.group-popup .popup-container {position:relative; box-sizing:border-box; padding:25px 25px 35px; text-align:center; border:1px solid #c5c5c5; background:#fff;}
+.group-popup .popup-container .fc-yellow {color:#efab1a}
+.group-popup .popup-container .popup-container {}
+.group-popup .popup-container .popup-cust {padding:5px 0 14px; border-bottom:1px solid #c5c5c5;}
+.group-popup .popup-container .popup-cust p {font-size:24px; line-height:35px; letter-spacing:-1px; color:#131313;}
+.group-popup .popup-container .popup-cust .f-bd {}
+.group-popup .popup-container .popup-cust .f-bd span {font-size:24px; line-height:35px; font-weight:bold;}
+.group-popup .popup-container .popup-cust .popup-txt {font-size:20px;}
+.group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:6px 0;}
+.group-popup .popup-container .info-txt {padding:15px 0 19px; font-size:16px; line-height:23px; color:#707070;}
+.group-popup .popup-container .btn-close {display:inline-block; min-width:200px; height:50px; font-size:18px; line-height:50px; font-weight:bold; color:#fff; background:#f75c07;}
+
+
+@media (max-width: 979px) {
+	.footer {margin-top: 15px;}
+	.container {padding: 0;}
+	hr {border: 0; border-top: 1px solid #b4b4b4; margin: 25px auto;}
+	.container hr {width: 95%;}
+	
+	.intro-sec hr {border-color: #e0e0e0;}
+	.intro-sec {position: relative; width: 100%; margin-top: 30px;}
+	.intro-sec .d-row {position: relative;}
+	.intro-sec .d-map {width: 97%; margin: 10px auto 0;}
+	.intro-sec .d-map > img {width: 100%;}
+	.intro-sec p {margin: 0 auto; text-align: center; word-break: keep-all;}
+	.intro-sec .p-1 {font-size: 14px; font-weight: 700; font-family: "Nanum Gothic", sans-serif; line-height: 1.3; letter-spacing: -0.5px;}
+	.intro-sec .txt_wr {font-size: 13px; color: #b17800;}
+	.intro-sec .p-1 strong {font-size: 16px; color: #c79e48; margin-bottom: 4px; display: inline-block; font-weight: bold;}
+	.intro-sec .p-2 {font-size: 12.5px; color: #595959; line-height: 1.5; margin-top: 8px; letter-spacing: -1px;}
+    .intro-sec .p-2.type-2 {margin-top: 0; color: #c41919;}
+	.intro-sec .area-btn {margin-top: 16px;}
+	.intro-sec .area-btn > a {position: relative; display: inline-block; width: 94%; height: 44px; background: #ecb84a; color: #fff; font-size: 15px; text-align: center;}
+	.intro-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.intro-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 6px;}
+	.intro-sec .sun {width: 94%; margin: 10px auto;}
+	.intro-sec .p-3 {width: 84%; margin: 0 auto; position: relative; color: #c41919; font-size: 12.5px; line-height: 1.5;}
+	.intro-sec .p-3.dot .dot {}
+
+	/* 객실안내 */
+	section[class*=-sec] .h3-tit {font-size: 16px; color: #474646; text-align: center; font-weight: 700;}
+	section[class*=-sec] .h3-tit + p {font-size: 14px; text-align: center; line-height: 1.3; word-break: keep-all; letter-spacing: -0.5px; margin: 8px auto 0;}
+	section[class*=-sec] .h2-tit {font-size: 16px; color: #474646; text-align: center; font-weight: 700;}
+	section[class*=-sec] .h2-tit + p {font-size: 14px; text-align: center; line-height: 1.3; word-break: keep-all; letter-spacing: -0.5px; margin: 8px auto 0;}
+	.room-sec {position: relative;}
+	.room-sec  > .p0 {width: 90%;}
+
+	.room-sec .ul-list, .room-sec .p-ps {width: 86%; margin: 0 auto;}
+	.room-sec .ul-list {}
+	.room-sec .ul-list .li-item {float: left; position: relative; width: 100%; margin-top: 25px;}
+	.room-sec .ul-list .li-item:first-child {margin-left: 0;}
+	.room-sec .ul-list .li-item figure {position: relative; overflow: hidden; width: 100%; height: 160px;}
+	.room-sec .ul-list .li-item figure > img {position: absolute; bottom: 0; width: 100%;}
+	.room-sec .ul-list .li-item:first-child figure > img {position: absolute; bottom: -15px;}
+	.room-sec .ul-list .li-item > div {position: relative;}
+	.room-sec .ul-list .li-item .d-row-1 {margin-top: 6px; height: 32px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name {font-size: 15px; color: #535353; font-weight: 700; line-height: 1.1; position: relative; top: 3px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name .d-row {font-weight: normal; font-size: 12px;}
+	.room-sec .ul-list .li-item .d-row-1 .a-btn {position: absolute; right: 0; top: 0; font-size: 12px; background: #392d1a; color: #fff; display: inline-block; text-align: center; line-height: 1.3; letter-spacing: -0.5px; padding: 8px 9px; z-index: 2; letter-spacing: -0.5px;}
+	.room-sec .ul-list .li-item .d-row-2 {padding-left: 32px; line-height: 1.4; color: #636363; margin-top: -5px; font-size: 13px;}
+	.room-sec .ul-list .li-item .d-row-2:before {content: ""; display: inline-block; position: absolute; top: 6px; left: 0; width: 26px; height: 1px; background: #777;}
+	.room-sec .p-ps {position: relative; font-size: 12px; color: #848484; margin-top: 18px; letter-spacing: -1px; line-height: 1.4;}
+
+	.room-sec .ul-list .li-item .bxBox {position: absolute; bottom: 70px; width: 100%; border: 3px solid #01374f; overflow: hidden; visibility: hidden;}
+	.room-sec .ul-list .li-item .bxBox li img {width: 100%; height: 160px;}
+	.room-sec .ul-list .li-item .txt-box {position: absolute; left: 0; top: 50%; margin-top: -12px; width: 100%; color: #fff; letter-spacing: -1px; text-align: center;}
+	.room-sec .ul-list .li-item .txt-box .p1 {font-size: 13px; font-weight: 600; display: none;}
+	.room-sec .ul-list .li-item .txt-box .p2 {font-size: 12px; line-height: 1.3;}
+	.room-sec .ul-list .li-item .bxBox .a-x {right: 0; top: 0; background: #01374f; width: 26px; height: 26px;}
+	.room-sec .ul-list .li-item .bxBox .a-x:before, .room-sec .ul-list .li-item .bxBox .a-x:after {background: #fff; left: 14px; top: 2px;}
+	.room-sec .bx-wrapper .bx-controls-direction {margin-top: -4.15px;}
+	.room-sec .bx-wrapper .bx-controls-direction a {width: 8px; height: auto;}
+	.room-sec .bx-wrapper .bx-prev {left: 5px;}
+	.room-sec .bx-wrapper .bx-next {right: 5px;}
+
+
+	/* 부대시설 */
+
+	.facil-sec {position: relative;}
+	.facil-sec > .p0 {letter-spacing: -1px; width: 84%;}
+	.facil-sec .h3-2 {font-size: 14px; text-align: center; margin: 15px auto 2px; font-family: "Nanum Gothic", sans-serif; color: #474646;}
+	.facil-sec .ul-list, .facil-sec .p-ps, .facil-sec .ul-list-2 {width: 95%; margin: 0 auto;}
+	.facil-sec .ul-list {font-size: 0; text-align: center;} 
+	.facil-sec .ul-list .li-item {position: relative; display: inline-block; margin-top: 8px; width: 32.33%;}
+	.facil-sec .ul-list .li-item:nth-child(3n-1) {margin: 8px 1.5% 0;}
+	.facil-sec .ul-list.type-2 .li-item {position: relative; display: inline-block; margin-top: 8px; width: 49%;}
+	.facil-sec .ul-list.type-2 .li-item:nth-child(2n) {margin-left: 2%; margin-right: 0;}
+	.facil-sec .ul-list .li-item figure {position: relative;}
+	.facil-sec .ul-list .li-item figure > img {width: 100%;}
+	.facil-sec .ul-list .li-item figure > figcaption {display: block; width: 100%; position: absolute; bottom: 0; left: 0; background: #000; background: rgba(0,0,0, .7); padding: 4px 0; padding-right: 5px; box-sizing: border-box; text-align: right; color: #fff; font-size: 12px; line-height: 1.3;}
+/*	.facil-sec .ul-list .li-item figure > .s-bg*/
+/*	.facil-sec .ul-list .li-item figure > figcaption:after {content: ""; display: inline-block; height: 104%; vertical-align: middle;}*/
+/*	.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+	.facil-sec .p-ps {position: relative; padding-left: 18px; font-size: 12px; color: #848484; margin-top: 18px; letter-spacing: -1px; line-height: 1.4;}
+
+	.facil-sec .area-btn {margin:0 auto; margin-top: 16px; text-align: center;}
+	.facil-sec .area-btn > a {position: relative; display: inline-block; width: 94%; height: 44px; margin:0 auto;background: #ecb84a; color: #fff; font-size: 15px; text-align: center;}
+	.facil-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.facil-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 6px;}
+    
+    /* 190103 노래,합주 관련 추가 */
+	.facil-sec .ul-list-2 .li-item {position: relative; display: inline-block; margin-top: 8px; width: 100%; background: #000; background: rgba(0,0,0, .7);}
+	.facil-sec .ul-list-2 .li-item figure {position: relative;}
+	.facil-sec .ul-list-2 .li-item figure img {width: 100%;}
+    .facil-sec .ul-list-2 .li-item figure figcaption, .facil-sec .ul-list-2 .li-item .li-txt {box-sizing: border-box; width: 100%; padding: 7px 10px 8px 10px; text-align: center; letter-spacing: -0.7px; font-size: 12px; line-height: 1.3; color: #fff;}
+	.facil-sec .ul-list-2 .li-item figure figcaption {display: block; position: absolute; bottom: 0; left: 0; background: #000; background: rgba(0,0,0, .7);}
+    .facil-sec .ul-list-2 .li-item .li-txt {display: table; /*min-height: 70px;*/ word-break: keep-all;}
+    .facil-sec .ul-list-2 .li-item .li-txt span {display: table-cell; vertical-align: middle;}
+
+	.etc-sec {position: relative;}
+	.etc-sec .d-cm {position: relative; text-align: center; line-height: 1.3; width: 98%; margin: 0 auto 10px; word-break: keep-all;}
+	.etc-sec .d-cm > p {position: relative;}
+	.etc-sec .d-cm .p-0 {font-size: 17px; color: #ecb84a; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+	.etc-sec .d-cm .p-1 {font-size: 12px; color: #231f20; line-height: 1.5; margin-top: 5px; letter-spacing: -1.7px;}
+	.etc-sec .d-cm .area-btn {font-size: 15px; margin: 15px auto 0; width: 97%;}
+	.etc-sec .d-cm .area-btn02 {font-size: 15px; margin: 10px auto 0; color: #ecb84a; font-weight: bold;}
+	.etc-sec .d-cm .area-btn02 a{color: #ecb84a; font-weight: bold; font-size: 17px;}
+	.etc-sec .d-cm .area-btn .a-btn {position: relative; display: inline-block; width: 100%; height: 40px; background: #ecb84a; color: #fff;}
+	.etc-sec .d-cm .area-btn .a-btn:after {content: ""; display: inline-block; height: 109%; vertical-align: middle;}
+	.etc-sec .d-cm .area-btn .a-btn .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 4px; margin-right: -15px;}
+	.etc-sec .d-box-2.d-cm .p-0:before {content: ""; display: inline-block;}
+	.etc-sec .d-box-2 .area-btn {margin-top: 20px; width: 95%;}
+ 	.etc-sec .d-box-2 .area-btn .a-btn {font-size: 16px; cursor: default; letter-spacing: 0;}
+	.etc-sec .d-box-2 .area-btn02 .pic-call {position: relative; display: inline-block; width: 20px; height: 20px; background: url(http://img.bscondo.co.kr/m/group/call_icon.png); background-size: 20px; vertical-align: middle; top: -2px;}
+	.etc-sec .d-box-2 .area-txt {font-size: 11px;}
+	.etc-sec .d-box-2 .area-btn02 .a-btn > .txt {position: relative; top: -1px; color: #333; font-size: 13px; font-weight: 400;}
+	.etc-sec .d-box-2 .p-2 .pic-sms {width: 22px;}
+	.etc-sec .d-box-2 .p-2 {font-size: 16px; font-weight: 700; margin-top: 5px; color: #ecb84a;}
+	
+	
+	/* 20180320_접수완료 레이어 팝업_다솜 */
+	.group-popup .popup-wrap {max-width:300px;}
+	.group-popup .popup-container {padding:10px 10px 20px;}
+	.group-popup .popup-container .popup-cust {padding:3px 0 7px;}
+	.group-popup .popup-container .popup-cust p {font-size:17px; line-height:24px; word-break:keep-all}
+	.group-popup .popup-container .popup-cust .f-bd span {font-size:17px; line-height:24px; font-weight:bold;}
+	.group-popup .popup-container .popup-cust .popup-txt {font-size:14px; line-height:20px;}
+	.group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:4px 0;}
+	.group-popup .popup-container .info-txt {padding:7px 0 9px; font-size:13px; line-height:18px; word-break:keep-all}
+	.group-popup .popup-container .btn-close {min-width:100px; height:35px; font-size:15px; line-height:35px;}
+	
+	/* 단체예약 Q&A */
+	.qna-group {position: relative; margin: 25px auto; padding: 25px 0; background: #f9f9f9; color: #474747;}
+	.qna-group h2 {text-align: center; font-size: 16px;}
+	.qna-group h2 > span {display: inline-block;}
+	.qna-group h2 .tit {padding: 0 5px;}
+	.qna-group h2 .titBg {width: 40px; height: 10px; background: url(http://img.bscondo.co.kr/group/faqTitBg.png) repeat-x; background-size: 10px}
+	.qna-list {margin-top: 10px;}
+	.qna-list > li {position: relative; border-bottom: 1px solid #ccc; font-size: 13px; letter-spacing: -0.5px;}
+	.qna-list > li > div {position: relative; line-height: 1.4; word-break: keep-all; font-family: "Nanum Gothic", sans-serif;}
+	.qna-list > li .f-q {cursor:pointer; padding-left: 34px; padding-right: 24px;}
+	.qna-list > li .f-q > * {display: inline-block;}
+	.qna-list > li .f-q .q-con {position: absolute; left: 10px; font-weight: 700;}
+	.qna-list > li .f-q .arr {position: absolute; right: 10px; top: 8px;}
+	.qna-list > li .f-q .arr:after {top: -2px; border-color: #bbb;}
+	.qna-list > li .f-a {background: #fff; height: 0; padding: 0; overflow: hidden;}
+	.qna-list > li.on .f-q {color: #ecb84a; font-weight: 700;}
+	.qna-list > li.on .f-q .arr:after {
+		top: 3px; border-color: #ecb84a;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+	.qna-list > li > div, .qna-list > li.on .f-a {padding: 9px 10px;}
+	.qna-list > li.on .f-a {height: auto; border-top: 1px solid #eee;}
+    
+	/* 20180404_단체문의 텍스트 추가_다솜 */
+	.etc-sec .d-cm .c-blue {word-break:keep-all; font-size:16px; color:#0012ff}
+	.etc-sec .li-tr .c-lightred {margin-left:66px; word-break:keep-all; color:#ff0000}
+}
+
+
+@media (min-width: 980px) {
+	hr {border: 0; border-top: 1px solid #b4b4b4; margin: 56px auto;}
+    .rtBookingBn, .area-btn {display: none;}
+	
+	.container {width: 980px; margin: 0 auto;}
+	.intro-sec hr {border-color: #e0e0e0;}
+	.intro-sec {position: relative; padding-top: 70px;}
+	.intro-sec .d-row {position: relative;}
+	.intro-sec .d-map {position: absolute; right: 0; top: 6px; width: 500px;}
+	.intro-sec .d-map img {width: 100%;}
+	.intro-sec p {letter-spacing: 0; word-break: keep-all;}
+	.intro-sec .p-1 {font-size: 24px; font-weight: 700; font-family: "Nanum Gothic", sans-serif; line-height: 1.4;}
+	.intro-sec .p-1 strong {font-size: 26px; color: #c79e48; margin-bottom: 5px; display: inline-block; font-weight: bold;}
+	.ie8 .intro-sec .p-1 strong {letter-spacing: -1px;}
+	.intro-sec .p-2 {width: 40%; font-size: 17px; color: #474646; line-height: 1.5; margin-top: 15px;}
+    .intro-sec .p-2.type-2 {margin-top: 0; color: #c41919;}
+	.intro-sec .txt_wr {color: #b17800;}
+
+	.intro-sec .area-btn {margin-top: 30px;}
+	.intro-sec .area-btn > a {position: relative; display: inline-block; width: 37%; height: 57px; background: #ecb84a; color: #fff; font-size: 18px; text-align: center;}
+	.intro-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.intro-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 9px; height: 9px; top: -1px; left: 20px;}
+	.intro-sec .sun {width: 37%; margin: 15px 0; display: inline-block;}
+	.intro-sec .p-3 {width: 42%; position: relative; color: #c41919; font-size: 18px; line-height: 1.5;}
+	.intro-sec .p-3.dot .dot {display: none;}
+	.intro-sec .p-3.dot {padding-left: 20px;}
+	.intro-sec .p-3.dot:before {content: "※"; position: absolute; left: 0;}
+
+	/* 객실안내 */
+
+	section[class*=-sec] .h3-tit {font-size: 35px; color: #474646; text-align: center; font-weight: bold;}
+	section[class*=-sec] .h3-tit + p {font-size: 18px; text-align: center; line-height: 1; margin-top: 15px;}
+	section[class*=-sec] .h2-tit, section[class*=-sec] .h2-tit + p {letter-spacing: 0;}
+	section[class*=-sec] .h2-tit {font-size: 35px; color: #474646; text-align: center; font-weight: 700;}
+	section[class*=-sec] .h2-tit + p {font-size: 18px; text-align: center; line-height: 1; word-break: keep-all; letter-spacing: 0; margin-top: 15px;}
+	/* 객실상품 */
+	.room-sec {position: relative; width: 980px;}
+	.room-sec .p-ps {color: #b17800; text-align: center; font-size: 18px;}
+	.room-sec .ul-list {margin-top: 35px;}
+	.room-sec .ul-list .li-item {float: left; position: relative; width: 300px; margin-left: 40px; margin-bottom: 30px;}
+	.room-sec .ul-list .li-item:first-child {margin-left: 0;}
+	.room-sec .ul-list .li-item > div {position: relative;}
+	.room-sec .ul-list .li-item .d-row-1 {margin-top: 10px; height: 57px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name {font-size: 22px; color: #5f5f5f; font-weight: 700; line-height: 1.1; position: relative; top: 3px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name .f-sm {font-size: 18px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name .d-row {font-size: 16px; font-weight: normal;}
+	.room-sec .ul-list .li-item .d-row-1 .a-btn {position: absolute; right: 0; top: 0; font-size: 16px; background: #392d1a; color: #fff; display: inline-block; text-align: center; line-height: 1.3; letter-spacing: -0.5px; padding: 14px 18px; z-index: 2;}
+	.room-sec .ul-list .li-item .d-row-2 {padding-left: 66px; line-height: 1.4; color: #636363; margin-top: -5px;}
+	.room-sec .ul-list .li-item .d-row-2:before {content: ""; display: inline-block; position: absolute; top: 11px; left: 0; width: 50px; height: 1px; background: #777;}
+	.room-sec .ul-list .nth-4 {padding-left: 100px;}
+
+
+	/* 부대시설 */
+	.facil-sec {position: relative;}
+	.facil-sec .h3-2 {font-size: 25px; text-align: center; margin: 25px auto 0; font-family: "Nanum Gothic", sans-serif; color: #474646;}
+	.facil-sec .ul-list, .facil-sec .ul-list-2 {margin-top: 0px; text-align: center; font-size: 0;}
+	.facil-sec .ul-list .li-item {position: relative; display: inline-block; margin-left: 20px; margin-top: 20px; width: 230px; height: 200px;}
+	.facil-sec .ul-list .li-item:nth-child(4n+1) {margin-left: 0;}
+	.facil-sec .ul-list.type-2 .li-item {position: relative; display: inline-block; margin-left: 20px; margin-top: 20px; width: 230px; height: 200px;}
+	.facil-sec .ul-list.type-2 .li-item:nth-child(4n+1) {margin-left: 0;}
+	.facil-sec .ul-list .li-item figure {position: relative;}
+	.facil-sec .ul-list .li-item figure > img {width: 100%;}
+	.facil-sec .ul-list .li-item figure > figcaption {display: block; width: 100%; position: absolute; bottom: 0; left: 0; padding: 7px  0 6px; padding-right: 5px; text-align: right; color: #fff; background: #000; background: rgba(0,0,0, .7); box-sizing: border-box; line-height: 1.3; font-size: 16px;}
+	.facil-sec .ul-list .li-item figure > figcaption .f-sm {font-size: 14px;}
+/*	.facil-sec .ul-list .li-item figure > figcaption:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}*/
+/*	.facil-sec .ul-list .li-item figure > .s-bg*/
+/*	.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+	.facil-sec .ul-list .li-tit {font-size: 25px;}
+	.facil-sec .p-ps {position: relative; padding-left: 23px; font-size: 17px; color: #848484; margin-top: 30px; line-height: 1.4; letter-spacing: -0.5px;}
+	.facil-sec .ul-list .nth-5 {margin-left: 140px;}
+    
+    /* 190103 노래,합주 관련 추가 */
+	.facil-sec .ul-list-2 .li-item {position: relative; float: left; display: block; margin-left: 20px; margin-top: 23px; width: 480px; /*height: 200px;*/}
+	.facil-sec .ul-list-2 .li-item:nth-child(2n+1) {margin-left: 0;}
+	.facil-sec .ul-list-2 .li-item figure {position: relative;}
+	.facil-sec .ul-list-2 .li-item figure img {width: 100%;}
+    .facil-sec .ul-list-2 .li-item figure figcaption, .facil-sec .ul-list-2 .li-item .li-txt {box-sizing: border-box; width: 100%; padding: 8px 8px 7px 8px; text-align: center; letter-spacing: -0.7px; color: #fff; background: #000; background: rgba(0,0,0, .7);}
+	.facil-sec .ul-list-2 .li-item figure figcaption {display: block; position: absolute; bottom: 0; left: 0; font-size: 16px; line-height: 1.3;}
+    .facil-sec .ul-list-2 .li-item .li-txt {display: table; font-size: 13px; line-height: 20px; word-break: keep-all;}
+    .facil-sec .ul-list-2 .li-item .li-txt span {display: table-cell; vertical-align: middle;}
+	.facil-sec .ul-list-2 .li-item .li-txt.ht-1 {height: 75px;}
+
+	/* 단체행사 상담 안내 */
+	.etc-sec {position: relative;}
+	.etc-sec .d-cm {position: relative; text-align: center; line-height: 1.3;}
+	.etc-sec .d-cm .p-0 {font-size: 35px; color: #ecb84a; font-weight: bold;}
+	.etc-sec .d-cm .p-1 {font-size: 18px; color: #231f20; line-height: 1.5; margin-top: 10px;}
+	.etc-sec .d-cm .area-btn {font-size: 20px; margin-top: 30px;}
+	.etc-sec .d-cm .area-btn .a-btn {position: relative; display: inline-block; width: 452px; height: 60px; background: #ecb84a; color: #fff;}
+	.etc-sec .d-cm .area-btn .a-btn:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.etc-sec .d-cm .area-btn .a-btn .ic-rArrow:after {border-color: #fff; width: 10px; height: 10px; top: 0; left: 2px; margin-right: -15px;}
+	.etc-sec .d-box-2 .area-btn02 {margin-top: 20px;}
+	.etc-sec .d-box-2 .area-btn02 .a-btn {display: inline; font-size: 34px; font-weight: 700; color: #ecb84a; background: 0; cursor: default; line-height: 1.5;}
+	.etc-sec .d-box-2 .area-btn02 .pic-call {position: relative; display: inline-block; width: 40px; height: 40px; background: url(http://img.bscondo.co.kr/group/call_icon.png); vertical-align: middle; top: -4px; left: -4px;}
+	.etc-sec .d-box-2 .area-txt {font-size: 22px; color: #474646;}
+	.etc-sec .d-box-2 .area-btn02 .a-btn > .txt {position: relative; top: -3px; color: #333; font-size: 21px; font-weight: 400;}
+	.etc-sec .d-box-2 .p-2 {font-size: 28px; font-weight: 700; margin-top: 10px; color: #ecb84a;}
+	
+	
+	/*단체예약 Q&A*/
+	.qna-group {position: relative; margin:56px auto; padding: 35px 0; background: #f9f9f9; color: #474747;}
+	.qna-group h2 {text-align: center; font-size: 34px;}
+	.qna-group h2 > span {display: inline-block;}
+	.qna-group h2 .tit {padding: 0 15px;}
+	.qna-group h2 .titBg {width: 112px; height: 16px; background: url(http://img.bscondo.co.kr/group/faqTitBg.png) repeat-x;}
+	.qna-list {width: 768px; margin: 25px auto 0;}
+	.qna-list > li {position: relative; border-bottom: 1px solid #ccc; letter-spacing: -0.5px;}
+	.qna-list > li > div {position: relative; line-height: 1.5; word-break: keep-all; font-family: "Nanum Gothic", sans-serif;}
+	.qna-list > li .f-q {padding-left: 82px; padding-right: 54px; font-size: 22px;}
+	.qna-list > li .f-q > * {display: inline-block;}
+	.qna-list > li .f-q .q-con {position: absolute; left: 40px; font-weight: 700;}
+	.qna-list > li .f-q .arr {position: absolute; right: 40px; top: 10px;}
+	.qna-list > li .f-q .arr:after {top: -2px; border-color: #bbb; border-width: 2px; width: 12px; height: 12px;}
+	.qna-list > li .f-a {background: #fff; height: 0; padding: 0; overflow: hidden; font-size: 19px; line-height: 1.6}
+	.qna-list > li.on .f-q {color: #ecb84a; font-weight: 700;}
+	.qna-list > li.on .f-q .arr:after {
+		top: 3px; border-color: #ecb84a;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+	.qna-list > li > div, .qna-list > li.on .f-a {padding: 12px 40px;}
+	.qna-list > li.on .f-a {height: auto; border-top: 1px solid #eee;}
+    
+	/* 20180404_단체문의 텍스트 추가_다솜 */
+	.etc-sec .d-cm .c-blue {word-break:keep-all; font-size:22px; color:#0012ff}
+	.etc-sec .li-tr .c-lightred {word-break:keep-all; margin-left:72px; color:#ff0000}
+}
+

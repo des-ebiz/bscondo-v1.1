@@ -1,0 +1,68 @@
+@charset 'utf-8';
+
+@media (max-width: 979px) {	
+	.login-outer {position: relative; padding-top: 35px; box-sizing: border-box;}
+	.login-outer .login-box {padding: 20px 0; width: 306px; margin: 0 auto; background:#fff; border:1px solid #dedede; letter-spacing:-0.1px; font-family: "Nanum Gothic", sans-serif;}
+	.login-outer .login-box .naverLogin .h4 {font-size:18px; color:#5a2400; font-weight: 400; margin-bottom: 25px; text-align: center;}
+	.login-outer .login-box .naverLogin .snsLarge {position: relative; margin:auto; width:260px}
+	.login-outer .login-box .naverLogin .snsLarge ul {}
+	.login-outer .login-box .naverLogin .snsLarge li {text-align:center; letter-spacing:-0.3px; font-weight:600; line-height:55px; font-size:15px; margin-top: 10px;}
+	.login-outer .login-box .naverLogin .snsLarge li:first-child {margin-top: 0;}
+	.login-outer .login-box .naverLogin .snsLarge li a {position: relative; display:block; width:100%; height:55px; border-radius: 5px; box-sizing: border-box;}
+	.login-outer .login-box .naverLogin .snsLarge li a img {position: absolute; top: 19px; left: 19px;}
+	.login-outer .login-box .naverLogin .snsLarge li a span {position: relative; display: inline-block; width: 210px;
+		float:right; border-left: 1px solid; text-align: center; border-left: 1px solid rgba(0,0,0,.196);}
+	.login-outer .login-box .naverLogin .snsLarge li.daum a span {width: 197px;}
+	.login-outer .login-box .naverLogin .snsLarge .naver a {color:#fff; background:#1ec800;}
+	.login-outer .login-box .naverLogin .snsLarge .kakao a {color:#3b1e1e; background:#ffeb00;}
+	.login-outer .login-box .naverLogin .snsLarge .facebook a {color:#fff; background:#3b5998;}
+	.login-outer .login-box .naverLogin .snsLarge .daum a {color:#4681bd; border:3px solid #4681bd; line-height:50px;}
+	.login-outer .login-box .naverLogin .snsLarge .twitter a {color:#fff; background:#32ccfe;}
+	.login-outer .login-box .naverLogin .snsLarge .google a {color:#fff; background:#d34837;}
+	.login-outer .login-box .naverLogin .snsLarge .naver a img {width: 20px;}
+	.login-outer .login-box .naverLogin .snsLarge .daum a img {width: 25px; top: 12px; left: 15px;}
+	.login-outer .login-box .naverLogin .snsLarge .facebook a img {width: 25px; top: 13px; left: 16px;}
+	.login-outer .login-box .naverLogin .snsLarge .kakao a img {top: 17px; left: 17px;}
+
+	.login-outer .alert {width: 100%; margin: 20px auto 0; text-align: center;}
+	.login-outer .alert .img {margin: 0 auto;}
+	.login-outer .alert .text {display: inline-block;}
+	.login-outer .alert .img {width:38px;margin-bottom: 10px;}
+	.login-outer .alert .img > img {width: 100%;}
+	.login-outer .alert .text {line-height:18px; font-size: 12px; word-break: keep-all; letter-spacing: -1px;}
+	/*.login-outer .alert .text span {color:#ff7e00; margin-bottom: 10px; display: block;}*/
+}
+@media (max-device-width: 320px) {
+	.login-outer .alert .text {letter-spacing: -1.5px;}
+}
+@media (min-width: 980px) {
+	.login-outer {position: relative;  padding: 15px 25px 35px; width:740px; margin: 100px auto; background:#fff; border:1px solid #dedede; letter-spacing:-0.1px; font-family: "Nanum Gothic", sans-serif;}
+	.login-outer .login-box {}
+	.login-outer .login-box .naverLogin .h4 {font-size:18px; color:#5a2400; font-weight: 400; margin-bottom: 25px;}
+	.login-outer .login-box .naverLogin .snsLarge {margin:auto; width:268px}
+	.login-outer .login-box .naverLogin .snsLarge ul {margin:auto; width:268px}
+	.login-outer .login-box .naverLogin .snsLarge li {text-align:center; letter-spacing:-0.3px; font-weight:600; line-height:55px; font-size:15px; margin-bottom: 10px;}
+	.login-outer .login-box .naverLogin .snsLarge li a {position: relative; display:block; width:268px; height:55px; border-radius: 5px; box-sizing: border-box;}
+	.login-outer .login-box .naverLogin .snsLarge li a img {position: absolute; top: 19px; left: 19px;}
+	.login-outer .login-box .naverLogin .snsLarge li a span {position: relative; display: inline-block; width: 210px;
+		float:right; border-left: 1px solid; text-align: center; border-left: 1px solid rgba(0,0,0,.196);}
+	.login-outer .login-box .naverLogin .snsLarge li.daum a span {width: 207px;}
+	.login-outer .login-box .naverLogin .snsLarge .naver a {color:#fff; background:#1ec800;}
+	.login-outer .login-box .naverLogin .snsLarge .kakao a {color:#3b1e1e; background:#ffeb00;}
+	.login-outer .login-box .naverLogin .snsLarge .facebook a {color:#fff; background:#3b5998;}
+	.login-outer .login-box .naverLogin .snsLarge .daum a {color:#4681bd; border:3px solid #4681bd; line-height:50px; box-sizing: border-box;}
+	.login-outer .login-box .naverLogin .snsLarge .twitter a {color:#fff; background:#32ccfe;}
+	.login-outer .login-box .naverLogin .snsLarge .google a {color:#fff; background:#d34837;}
+	.login-outer .login-box .naverLogin .snsLarge .naver a img {width: 20px;}
+	.login-outer .login-box .naverLogin .snsLarge .daum a img {width: 25px; top: 12px; left: 15px;}
+	.login-outer .login-box .naverLogin .snsLarge .facebook a img {width: 25px; top: 13px; left: 16px;}
+	.login-outer .login-box .naverLogin .snsLarge .kakao a img {top: 17px; left: 17px;}
+	
+	.login-outer .alert {margin-top: 30px; text-align: center;}
+	.login-outer .alert .img {margin: 0 auto;}
+	.login-outer .alert .text {display: inline-block;}
+	.login-outer .alert .img {width:42px; margin-bottom: 10px;}
+	.login-outer .alert .text {line-height:18px; font-size: 13px;}
+	/*.login-outer .alert .text span {color:#ff610a}*/
+}
+

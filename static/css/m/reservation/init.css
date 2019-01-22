@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+.confirm-contents {width: 96%; margin: 0 auto;}
+.confirm-contents h2 {font-size: 17px; text-align: center; padding: 30px 0 26px;}
+
+.confirm-contents .conf-tab {border: 1px solid #4b4b4b;}
+.confirm-contents .conf-tab > a {
+	position: relative; display: block; float: left; color: #515151; width: 25%; text-align: center; height: 28px; font-size: 13px; border-left: 1px solid #4b4b4b; box-sizing: border-box;
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #dddddd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f9f9f9 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f9f9f9 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+.confirm-contents .conf-tab > a:first-child {border-left: 0;}
+.confirm-contents .conf-tab > a:before {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+
+.confirm-contents .conf-tb {position: relative; width: 100%; margin-top: 15px;}
+.confirm-contents .conf-tb thead {border-top: 1px solid #8d8d8d; border-bottom: 1px solid #8d8d8d; background: #f2f2f2;}
+.confirm-contents .conf-tb thead th {font-size: 13px; text-align: center; padding: 6px 0;}
+.confirm-contents .conf-tb tbody td {font-size: 12.5px; text-align: center; color: #7d7d7d; padding: 7px 0;}
+.confirm-contents .conf-tb tbody tr {background: #fafafa;}
+.confirm-contents .conf-tb tbody tr:nth-child(2n) {background: #f0f0f0;}
+
+.confirm-contents .pagenation {text-align: center; font-size: 0; margin: 15px auto 50px;}
+.confirm-contents .pagenation a {display: inline-block; font-size: 13px; width: 24px; height: 24px; vertical-align: middle; line-height: 1.9em; color: #919191; font-family: "Nanum Gothic"; font-weight: 600; margin-left: 2px; margin-right: 2px; border: 1px solid #ccc;}
+.confirm-contents .pagenation a[class*="prev"], .confirm-contents .pagenation a[class*="next"] {font-size: 12px; line-height: 2em; letter-spacing: -2px;}
+.confirm-contents .pagenation a:hover, .confirm-contents .pagenation a.on {color: #000; border: 1px solid #000;}
+.confirm-contents .pagenation a.prev {text-indent: -5px;}
+.confirm-contents .pagenation a.pprev {text-indent: -3px;}
+.confirm-contents .pagenation a.next {text-indent: 1px;}

@@ -1,0 +1,81 @@
+@charset 'utf-8';
+
+.header {background: #eaeaea;}
+
+.main-contents, .sub-contents {width: 96%; margin: 0 auto;}
+.sub-contents {padding-bottom: 30px;}
+.main .main-part {padding: 30px 0;}
+.main .d-part {position: relative; text-align: center; padding-top: 25px;}
+.main .d-part h3 {font-size: 17px; text-align: center; font-weight: 500;}
+.main .d-part h3.type-2 {padding-bottom: 10px;}
+.main .d-part .p-1 {font-size: 13px; color: #7d7d7d;}
+.main .d-part figure {margin-top: 8px;}
+.main .d-part figure > img {width: 100%;}
+.main .d-part .btn-area {margin-top: 10px;}
+.main .d-part .btn-area .a-btn {display: block; font-size: 14px; color: #fff; line-height: 42px;}
+.main .d-part .img-area {margin-top: 8px; }
+.main .d-part .img-area > img {float: left; display: block; width: 32%; margin-left: 2%;}
+.main .d-part .img-area > img:first-child {margin-left: 0;}
+.main .btn-area-01 {width: 96%; margin: 0 auto; padding: 30px 0;}
+.main .btn-area-01 .a-btn {display: block; font-size: 14px; color: #fff; line-height: 42px; text-align: center;}
+
+/* 단체예약 문의 팝업 */
+#contact-bg {z-index: 51;}
+.contact-pop {position: absolute; top: 144px; /*top: 177px;*/ background: #fff; padding-bottom: 18px;font-size: 14px; z-index: 100; width: 100%;}
+.contact-pop > h2 {color: #fff; font-size: 26px;}
+.contact-pop .p-cf {color: #191919; font-size: 20px;}
+.contact-pop .d-top {position: relative; background: #f2f3f6; border-bottom: 1px solid #8e929b; color: #1c1c1c; height: 36px; line-height: 31px; padding: 0 10px; font-weight: 700;}
+.contact-pop .i-chk-bef:before, .contact-pop .i-chk-aft:after {position: relative; content: ""; display: inline-block; width: 8px; height: 11px; background: url(http://img.bscondo.co.kr/m/group/i_chk.png) no-repeat; background-size: 8px; vertical-align: middle;}
+.contact-pop .i-chk-aft:after {margin-right: 0; margin-left: 2px; top: -1px;}
+.contact-pop .a-x {top: 7px; right: 8px;}
+.contact-pop .a-x:before, .contact-pop .a-x:after {right: 9px; background: #787878;}
+.contact-pop .ul-tb {position: relative; width: 100%; font-family: 'Nanum Gothic', sans-serif;}
+.contact-pop .nece {border-bottom: 1px solid #8e929b;}
+.contact-pop .li-tr {position: relative; padding: 6px 0px; font-size: 0; border-top: 1px solid #dadada; letter-spacing: -0.5px;}
+.contact-pop .li-tr:first-child {border-top: 0;}
+.contact-pop .li-tr > span {position: relative; display: inline-block; font-size: 12.5px; vertical-align: middle;}
+.contact-pop .li-tr > span.ver-t {vertical-align: top; top: 10px;}
+.contact-pop .li-tr .mg- {width: 7px; height: 1px; background: #787878; margin: 0 5px;}
+.contact-pop .li-tr .mg-l {width: 1px; height: 20px; background: #a0a0a0; margin: 0 7px 0 2px; top: 2px;}
+.contact-pop .li-tr hr {margin: 6px auto; border-color: #dadada;}
+
+
+.contact-pop .li-tr .s-lbl {width: 66px; margin-left: 10px;}
+.contact-pop .li-tr input, .contact-pop .li-tr select, .contact-pop .li-tr .wd-8 {-webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0;padding: 0;}
+.contact-pop .li-tr input, .contact-pop .li-tr select {height: 30px; border: 1px solid #787878; font-size: 12.5px;}
+.contact-pop .li-tr select {background: url(http://img.ocean2you.co.kr/renew/group/i_dArr_m.png) no-repeat 114px 11px;}
+.contact-pop .li-tr .wd-1, .contact-pop .li-tr .wd-3, .contact-pop .li-tr .wd-4, .contact-pop .li-tr .wd-7 {text-indent: 3px;}
+.contact-pop .li-tr .wd-2 {text-align: center;}
+.contact-pop .li-tr .wd-1 {width: 135px;}
+.contact-pop .li-tr .wd-2 {width: 58.5px;}
+.contact-pop .li-tr .wd-3 {width: 210px;}
+.contact-pop .li-tr .wd-4 {width: 121px;}
+.contact-pop .li-tr .wd-5, .contact-pop .li-tr .wd-6 {text-align: center; margin-left: 5px;}
+.contact-pop .li-tr .wd-5 {width: 36px;}
+.contact-pop .li-tr .wd-6 {width: 40px;}
+.contact-pop .li-tr .wd-7 {width: 100px; margin-right: 5px;}
+.contact-pop .li-tr .wd-8 {width: 268px; height: 60px; padding: 3px; font-size: 12px; resize: none; border: 1px solid #787878;}
+
+.contact-pop .li-tr .wd-4 + select {top: 0px; position: relative; margin-left: 10px;}
+.contact-pop .li-tr .wd-5 + span, .contact-pop .li-tr .wd-6 + span {margin-left: 3px; margin-right: 5px;}
+
+.contact-pop .area-btn {margin-top: 10px; padding: 0 10px;}
+.contact-pop .area-btn > a {position: relative; display: block; width: 100%; margin: 0 auto; height: 44px; background: #d49f34; color: #fff; font-size: 15px; text-align: center;}
+.contact-pop .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+.contact-pop .area-btn > a .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 6px;}
+
+@media (max-device-width: 320px) {
+	.contact-pop .d-top {padding: 0 5px;}
+	.contact-pop .li-tr {letter-spacing: -1px;}
+	.contact-pop .li-tr .s-lbl {width: 58px; margin-left: 5px;}
+	.contact-pop .li-tr input, .contact-pop .li-tr select {font-size: 12px;}
+	.contact-pop .li-tr > span {font-size: 12px;}
+	.contact-pop .li-tr .mg-l {margin: 0 5px 0 0px;}
+	.contact-pop .li-tr .wd-4 {width: 100px;}
+	.contact-pop .li-tr .wd-5, .contact-pop .li-tr .wd-6 {width: 33px; margin-right: 2px;}
+	.contact-pop .li-tr .wd-7 {margin-right: 5px;}
+	.contact-pop .li-tr .wd-5 + span, .contact-pop .li-tr .wd-6 + span {margin-left: 1px;}
+	.contact-pop .li-tr .wd-8 {width: 228px;}
+	
+	.privacy-bg .cm-s {width: 310px; margin-left: -155px;}
+}

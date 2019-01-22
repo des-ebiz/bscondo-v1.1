@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.header {background: #eaeaea;}
+
+.main-contents {width: 96%; margin: 0 auto; padding-bottom: 30px;}
+.main-contents .d-part {position: relative;}
+.main-contents .d-part h3 {font-size: 17px; text-align: center; font-weight: 500; padding: 25px 0 15px;}
+.main-contents .d-part [class^=p-] {text-align: center;}
+.main-contents .d-part .p-1 {font-size: 13px; color: #7d7d7d; margin-bottom: 10px;}
+.main-contents .d-part figure {margin-top: 8px;}
+.main-contents .d-part figure > img {width: 100%;}
+.main-contents .mapBox {width: 96%; margin: 10px auto 0;}
+.main-contents .mapBox {font-size: 0;}
+.mapBox .mapInfo {padding: 10px 0; border-bottom:1px solid #cfcfcf; border-top:1px solid #cfcfcf; background-color:#f6f6f6}
+.mapBox .mapInfo ul {}
+.mapBox .mapInfo ul li {position: relative; margin-top:10px; margin-left:5px; color:#585858; font-size:13px;}
+.mapBox .mapInfo ul li:first-child {margin-top: 0;}
+.mapBox .mapInfo ul li .map_i {display: inline-block; font-weight:bold; width:54px; font-size:13px; color:#000; padding-left: 18px;}
+.mapBox .mapInfo ul li .map_i > img {position: absolute; left: 0; top: 2px;}
+
+
+.main-contents .mapArea {position: relative;}
+.main-contents .mapArea > div {color: #fff;}
+.main-contents .mapArea > div > img {display: block; width: 100%;}
+.main-contents .mapArea .mapInf {position: relative; background: #000 url(http://img.bscondo.co.kr/waycome/mapInfoBg_m.jpg) no-repeat center top; height: 120px; background-size: contain;}
+.main-contents .mapArea .mapInf .mapInfUl {position: absolute; top: 0; left: 0; width: 100%;}
+.main-contents .mapArea .mapInf .mapInfUl > li {float: left; width: 50%; position: relative; text-align: center; box-sizing: border-box; padding-top: 24px;}
+.main-contents .mapArea .mapInf .mapInfUl > li > img {width: 24px;}
+.main-contents .mapArea .mapInf .mapInfUl > li:first-child:after {content: ""; display: block; position: absolute; right: 0; top: 15px; width: 1px; height: 90px; background: #fff;}
+.main-contents .mapArea .mapInf .mapInfUl > li.nth-1 {font-size: 13px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.main-contents .mapArea .mapInf .mapInfUl > li.nth-1 .pTxt {padding-top: 10px; line-height: 1.6;}
+.main-contents .mapArea .mapInf .mapInfUl > li.nth-2 {font-family: "Noto Sans KR", sans-serif;}
+.main-contents .mapArea .mapInf .mapInfUl > li.nth-2 .pTxt{padding-top: 14px; font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}

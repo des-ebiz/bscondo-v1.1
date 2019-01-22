@@ -1,0 +1,176 @@
+.hidden-md {
+display: none !important;
+}
+.show-md {
+display: block !important;
+}
+
+.container {width: 980px;}
+.footer {min-width: 1070px;}
+
+.header.on .hd-area .glb:after {content: ""; display: block; width: 100%; bottom: 0; box-shadow: 0 1px 8px 2px rgba(0,0,0,.4); z-index: 1;}
+.header.on .hd-area [class^=gNavDep] {z-index: -1;}
+.header .hd-area {position: relative;}
+.header .hd-area .gLogo {position: absolute; top: 14px; left: 50px; display: inline-block;}
+.header .hd-area .gNav {float: right; top: 0px;}
+.header .hd-area .gNav .gnb {text-align: center; float: right;}
+
+.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 13px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
+.header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
+.header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
+.header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
+.header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
+.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+.header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
+.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
+.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
+
+.header .d1 {position: absolute; right:700px; /* right: 584px; */ top: 32px;}
+.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+/*	.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}*/
+
+.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}
+
+/* 20180516_푸터 디자인 수정_다솜 */
+.footer-2 {/*min-height: 250px;*/ margin-top:40px; padding:45px 0 100px 0; background:#323232;}
+.footer-2 .container {position:relative; box-sizing:border-box; width:1250px; margin:0 auto; /*padding-left:50px;*/}
+.footer-2 .f_menu {margin-left:228px;}
+.footer-2 .f_menu li {position:relative; float:left; padding:0 20px;}
+.footer-2 .f_menu li:before {content:''; display:inline-block; position:absolute; width:2px; height:16px; top:50%; left:0; margin-top:-8px; background:#fff;}
+.footer-2 .f_menu li:first-child {padding-left:0}
+.footer-2 .f_menu li:first-child:before {content:none}
+.footer-2 .f_menu li a {font-size:16px; color:#fff}
+
+.footer-2 .cf-box {position:absolute; width:540px; top:0; right:0}
+.footer-2 .cf-box .p-0 {padding:4px 0 10px; font-size:28px; font-weight:500; line-height:30px; color:#dcdcdc;}
+.footer-2 .cf-box .p-1 {font-size:18px; color:#dbdbdb;}
+.footer-2 .cf-in {position:relative; margin-top:28px; margin-left:2px; padding-left:28px;}
+.footer-2 .cf-in:before {content:''; display:inline-block; position:absolute; top:9px; left:0; width:1px; height:210px; background:#5d5d5d;}
+.footer-2 .cf-in .callFor {display:block; margin-top:16px}
+.footer-2 .cf-in .callFor.cf1 {margin-top:0}
+.footer-2 .cf-in .callFor p {letter-spacing:0.5px;}
+.footer-2 .cf-in .callFor span {display:inline-block; letter-spacing:-1px;}
+.footer-2 .cf-in .callFor .s1 {font-size:24px; font-weight:500; color:#edae18}
+.footer-2 .cf-in .callFor .s1-2 {margin-left:14px; font-size:18px; color:#ffea5f}
+.footer-2 .cf-in .callFor .s2 {font-size:24px; line-height:24px; font-weight:bold; color:#fff}
+.footer-2 .cf-in .callFor .s2 img {margin-right:4px}
+.footer-2 .cf-in .callFor .s3 {position: relative; top: -2px; margin-left:5px; font-size:16px; color:#fff}
+.footer-2 .cf-in .callFor .s4 {display: block; margin-top: 3px; color: #fff; font-size: 20px; font-weight: 800; letter-spacing: -0.5px;}
+
+.footer-2 .flt-box {margin-top:30px;}
+.footer-2 .flt-1, .footer-2 .flt-2 {float:left}
+.footer-2 .flt-1 {width:203px; margin:0 25px 21px 0; text-align:right} 
+.footer-2 .flt-1 img {}
+.footer-2 .flt-2 {padding-left:4px}
+.footer-2 .flt-2 .nth-1 {font-size:15px; line-height:22px; letter-spacing:-1px; color:#d3d3d3}
+.footer-2 .flt-2 .nth-1 .intv {display:inline-block; width:16px; margin:0; padding:0}
+.footer-2 .flt-2 .nth-1 a {font-size:15px; line-height:22px; letter-spacing:-1px; color:#d3d3d3}
+.footer-2 .flt-2 .nth-1 small {display:block; margin-top:25px; font-size:15px; line-height:22px; letter-spacing:-1px; color:#d3d3d3}
+
+
+.main-contents.cm-s {margin: 0px auto; padding-top: 45px;}
+.main-contents.cm-s h3 .title_ico {display: block; width: 22px; text-align: center; margin: 0 auto;}
+.main-contents.cm-s h3 {font-size: 35px; font-weight: 600; color: #474646; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 0px auto 20px; letter-spacing: -1px; text-align: center;}
+.main-contents.cm-s .resortImg {width: 100%;}
+.main-contents.cm-s .p-1 {font-size: 28px; font-weight: 700; color: #000; margin: 30px auto 15px;}
+.main-contents.cm-s .p-2 {font-size: 15px; color: #757575; word-break: keep-all;}
+
+/* 단체예약 문의 팝업 */
+.contact-pop {width: 760px; left: 50%; margin-left: -380px; top: 120px; position: absolute; z-index: 100; background: #fff; font-family: "Malgun Gothic", sans-serif;}
+.contact-pop, .contact-pop * {box-sizing: border-box; line-height: 1.3;}
+.contact-pop .d-tit p {position: relative; text-align: center;  color: #fff; font-size: 26px; background: #D49F34; width: 480px; margin: 0 auto; height: 60px; line-height: 54px; top: -10px; letter-spacing: -2px;}
+.contact-pop .d-tit .t-l, .contact-pop .d-tit .t-r {display: inline-block; position: absolute; top: 0; border: 24px solid transparent; border-bottom-width:30px;}
+.contact-pop .d-tit .t-l {border-top: 30px solid #D49F34; left: -48px; border-right: 24px solid #D49F34;}
+.contact-pop .d-tit .t-r {border-top: 30px solid #D49F34; right: -48px; border-left: 24px solid #D49F34;}
+.contact-pop .d-tit .t-l:before, .contact-pop .d-tit .t-r:before {content: ""; position: absolute; top: -40px; display: inline-block; border: 10px solid transparent; border-bottom-color: #b18223; z-index: -1;}
+.contact-pop .d-tit .t-l:before {left: -34px;}
+.contact-pop .d-tit .t-r:before {right: -34px;}
+.contact-pop .a-x {top: 18px; right: 16px; width: 32px; height: 30px;}
+.contact-pop .a-x:before, .contact-pop .a-x:after {width: 38px; height: 2px; background: #8f8f8f; top: 14px; right: -3px;}
+.ie8 .contact-pop .a-x:after {font-size: 26px;}
+.contact-pop .p-cf {color: #191919; font-size: 20px; text-align: center; letter-spacing: -1px; margin-top: 10px; line-height: 20px;}
+.contact-pop .p-cf .pic-chk {position: relative; top: -2px;}
+.contact-pop .d-top {position: relative; width: 660px; margin: 5px auto 0; color: #676767; height: 36px; line-height: 31px; font-size: 14px; text-align: right; letter-spacing: -1px;}
+.contact-pop .i-chk-bef:before, .contact-pop .i-chk-aft:before {content: "*"; display: inline-block; color: #f00; position: relative; top: 2px; font-weight: 700; margin-right: 3px; vertical-align: middle;}
+.contact-pop .i-chk-aft:before {top: -1px; font-size: 14px;}
+.contact-pop .ul-tb {position: relative; width: 660px; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif;}
+.contact-pop .nece {border-bottom: 1px solid #8e929b; border-top: 1px solid #dadada;}
+.contact-pop .li-tr:first-child {border-top: 0;}
+.contact-pop .li-tr {position: relative; padding: 10px 0px; font-size: 0; border-top: 1px solid #dadada; letter-spacing: -0.5px;}
+.contact-pop .li-tr > span {position: relative; display: inline-block; font-size: 16px; font-weight: 700; vertical-align: middle;}
+.contact-pop .li-tr > span.ver-t {vertical-align: top; top: 10px;}
+.contact-pop .li-tr .mg- {width: 10px; height: 1px; background: #787878; margin: 0 6px;}
+.contact-pop .li-tr .mg-l {width: 1px; height: 26px; background: #a0a0a0; margin: 0 18px 0 2px; top: 1px;}
+.contact-pop .li-tr hr {margin: 6px auto; border-color: #dadada;}
+
+.contact-pop .li-tr .s-lbl {width: 74px; margin-left: 20px;}
+.contact-pop .li-tr .s-lbl:first-child {margin-left: 0;}
+.contact-pop .li-tr .ml-1 {margin-left: 40px;}
+.contact-pop .li-tr input, .contact-pop .li-tr select, .contact-pop .li-tr .wd-8 {-webkit-appearance: none; -moz-appearance: none; appearance: none; -ms-appearance: none; -o-appearance: none; border-radius: 0;}
+.contact-pop .li-tr input, .contact-pop .li-tr select {height: 28px; border: 1px solid #787878; font-size: 16px;}
+.contact-pop .li-tr select::-ms-expand {display: none;}
+.contact-pop .li-tr select {
+	outline : none;
+	overflow : hidden;
+	text-indent : 5px;
+	text-overflow : '';
+	background: url(http://img.ocean2you.co.kr/renew/group/i_dArr.png) no-repeat 174px 9px;
+}
+.ie8 .contact-pop .li-tr select {background: none;}
+.contact-pop .li-tr .wd-1, .contact-pop .li-tr .wd-3, .contact-pop .li-tr .wd-4, .contact-pop .li-tr .wd-7 {text-indent: 5px;}
+.contact-pop .li-tr .wd-2 {text-align: center;}
+.contact-pop .li-tr .wd-1 {width: 200px;}
+/*.contact-pop .li-tr .wd-1-2 {width: 205px;}*/
+.contact-pop .li-tr .wd-2 {width: 70px;}
+.contact-pop .li-tr .wd-3 {width: 365px;}
+.contact-pop .li-tr .wd-4 {width: 200px;}
+.contact-pop .li-tr .wd-5, .contact-pop .li-tr .wd-6 {text-align: center; margin-left: 12px;}
+.contact-pop .li-tr .wd-5 {width: 58px;}
+.contact-pop .li-tr .wd-6 {width: 64px;}
+.contact-pop .li-tr .wd-7 {width: 204px; margin-right: 8px;}
+.contact-pop .li-tr .wd-8 {width: 564px; height: 50px; padding: 3px; font-size: 12px; resize: none; border: 1px solid #787878;}
+
+.contact-pop .li-tr .wd-4 + select {top: 0px; position: relative; margin-left: 14px;}
+.contact-pop .li-tr .wd-5 + span, .contact-pop .li-tr .wd-6 + span {margin-left: 8px; margin-right: 20px;}
+
+.contact-pop .area-btn {margin-top: 12px; padding: 0 10px;}
+.contact-pop .area-btn > a {position: relative; display: block; width: 272px; margin: 0 auto; height: 58px; background: #D49F34; color: #fff; font-size: 18px; text-align: center;}
+.contact-pop .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+.contact-pop .area-btn > a .ic-rArrow:after {border-color: #fff; width: 9px; height: 9px; top: 1px; left: 32px; margin-right: -10px; border-width: 2px;}
+.contact-pop .d-bottom {background: #8c8c8c; color: #fff; margin-top: 18px; padding: 10px 20px 12px;}
+.contact-pop .d-bottom .p-1 {line-height: 1.3; font-size: 17px;}
+.contact-pop .d-bottom .fl-r {width: 260px; position: relative; top: -4px; display: inline-block; float: right; color: #fff;}
+.contact-pop .d-bottom .fl-r > img {position: relative; top: -1px; width: 24px; margin-right: 8px;}
+
+.contact-pop.type-2 {position: relative; top: 0; text-align: left; width: 100%; left: auto; margin-left: 0;}
+
+/* 이용약관 팝업 */
+.layer-pop-bg {position: fixed; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.privacy-bg, .privacy-bg .cm-s {display: none;}
+.privacy-bg .cm-s {position: absolute; width: 748px; height: 828px; position: absolute; top: 50%; margin-top: -414px; left: 50%; margin-left: -374px; background: #fff;}
+.privacy-bg .cm-s .d-top {height: 50px; background: #ad825d; color: #FFF; font-size: 18px;}
+.privacy-bg .cm-s .d-top strong {display: inline-block; position: relative; top: 12px; left: 15px;}
+.privacy-bg .cm-s .d-top .a-x {position: absolute; display: inline-block; height: 50px; width: 50px; right: 0px; top: 0; }
+.privacy-bg .cm-s .d-top .a-x:before, .privacy-bg .cm-s .d-top .a-x:after {background: #fff; width: 30px; height: 1px; left: 8px; top: 24px;}
+.privacy-bg .cm-s .d-cont {height: 778px; overflow: auto; padding: 15px 12px 15px 15px; font-size: 14px; line-height: 1.5; word-break: keep-all; box-sizing: border-box;}
+.privacy-bg .cm-s .tablepri {border: 1px solid #000; width: auto; line-height: 1.5em; margin-top: 10px; letter-spacing: -0.2px;}
+.privacy-bg .cm-s .tablepri th, .privacy-bg .cm-s .tablepri td {padding: 0 5px;}
+.privacy-bg .cm-s .privacy {font-weight: bold;}
+.privacy-bg .cm-s .d-cont .title {display: block; margin-top: 10px;}
+.privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
+.term-warp {}
+
+.header .hd-area .gNav .gnb > li > a {padding: 0 20px; font-size: 20px;}
+.header .hd-area [class^=gNavDep] {height: 50px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
+
+.header .d1 {position: absolute; right:994px; top: 29px;}
+.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 17px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+/*.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}
+.header.on .d1 .faq-a {font-weight: 500; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}*/
+
+

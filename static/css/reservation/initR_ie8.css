@@ -1,0 +1,10 @@
+#contents {width: 978px; margin-top: 0; border-top: 3px solid #717171; margin-bottom: 100px;}
+
+.main-contents h3 {font-size: 35px; font-weight: 700; color: #434343; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 30px auto 15px; letter-spacing: -1px;}
+/*#main5 {width: 980px;}*/
+
+/* 20180321_오른쪽 퀵배너추가_다솜 */
+.lWing-wrap,
+.cont-side.right {position: absolute; top:50px; right: 50%; margin-right: -693px; z-index: 20;}
+
+.cont-side {position: absolute; top:50px; right: 50%; margin-right: -693px; z-index: 20;}

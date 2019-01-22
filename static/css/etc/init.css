@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+/*--- 예약방법 페이지 ---*/
+section[class$=-contents] {width: 980px; margin: 0 auto; padding-bottom: 100px;}
+section[class$=-contents] h2 {font-size: 35px; font-weight: 700; color: #434343; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 50px auto 20px; letter-spacing: -1px;}
+.booking-contents .info {position:relative; width:980px;}
+.booking-contents .info .tab {padding-left:20px; width:980px; height:46px; font-size:17px; line-height:2.5; background:url(http://img.gobs.co.kr/customer_tabBG.jpg) no-repeat}
+.booking-contents .info .tab span {font-weight:600; color:#ff610a}
+.booking-contents .info .d-row {padding:20px; width:980px; line-height:1.8}
+.booking-contents .info .d-row span {font-weight:600; color:#ff610a}
+.booking-contents .info .coinmg {margin:auto; display:block; padding:10px 0 30px 0}
+
+.booking-contents .info .refund_t {position:absolute; right:0; top:420px; width:300px; background:#fff; border:1px solid #4d4d4d; font-size:11px; font-family:'돋움', Dotum, sans-serif}
+.booking-contents .info .refund_t th {height:30px; background:#fe8585; color:#fff; font-weight:bold; text-align:center}
+.booking-contents .info .refund_t td {padding:5px; text-align:left; border:1px solid #4d4d4d}
+
+.policy-contents .txt-box {width:980px; font-size: 14px; word-break: keep-all; line-height: 1.5;}

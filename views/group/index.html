@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>비에스앤리조트도고콘도</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
+<!--
+	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR.css">
+	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/group/initR.css">
+-->
+
+	<link rel="stylesheet" type="text/css" href="../../static/css/commonR.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/group/initR.css">
+	
+	<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>	 -->
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+	<script src="http://static.bscondo.co.kr/js/common.js"></script>
+	<!--<script src="../../static/js/common.js"></script>-->
+	<!-- 20180321 js 추가 -->
+<!--	<script src="../../static/js/group/init.js"></script>-->
+	<script src="http://static.bscondo.co.kr/js/group/init.js"></script>
+
+	
+	<script>
+		WebFont.load({
+			custom: {
+				families: ['Nanum Gothic', 'Noto Sans KR'],
+				urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css','http://fonts.googleapis.com/earlyaccess/notosanskr.css']
+			}
+		});
+	</script>
+
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR_ie8.css">
+		<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/group/initR_ie8.css">
+		
+		<script src="http://static.bscondo.co.kr/js/common_ie8.js"></script>
+		<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<h1 class="hidden">비에스앤리조트도고콘도</h1>
+
+	<div id="bs-wrap">
+		<header class="header on" id="gnb-header">
+			<div class="hd-top">
+			</div>
+			<div class="hd-area clr">
+				<div class="glb clr">
+					<a href="/" class="gLogo"><img src="http://img.bscondo.co.kr/top_logo.png" alt="비에스앤리조트로고"></a>
+
+<!--
+					<div class="d1">
+						<a class="faq-a show-md" id="faq-a" href="javascript:free_layer();">무료숙박권 이벤트 안내</a>
+						<a class="mFaq-a show-xs" id="mFaq-a" href="javascript:free_layer();"><span><img src="http://img.ocean2you.co.kr/renew/m_icon.png">이벤트 안내</span></a>
+					</div>
+-->
+
+					<nav class="gNav show-md">
+						<ul class="gnb clr">
+							<li class="nth-1 ">
+								<a href="/intro/">콘도소개</a>
+							</li>
+							<li class="nth-2 ">
+								<a href="/gallery">객실안내</a>
+								<div class="gNavDep2">
+									<ul class="gnbDep2 clr">
+																				<li><a href="/gallery/?id=room01">스탠다드 온돌</a></li>
+										<li><a href="/gallery/?id=room02">디럭스 온돌</a></li>
+										<li><a href="/gallery/?id=room03">디럭스 침대</a></li>
+										<li><a href="/gallery/?id=room04">디럭스 키즈</a></li>
+										<li><a href="/gallery/?id=room05">디럭스 패밀리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nth-3 ">
+								<a href="/facil/">부대시설</a>
+							</li>
+							<li class="nth-4 on">
+								<a href="/group/">단체문의</a>
+							</li>
+							<li class="nth-5 ">
+								<a href="/waycome/">오시는길</a>
+							</li>
+							<li class="nth-5 ">
+								<a href="/tourplace/">주변관광지</a>
+								<div class="gNavDep3">
+																		<ul class="gnbDep3 clr">
+										<li class="tour_li_1 tour_li on"><a href="/tourplace/?tp=1">스파, 온천/워터파크</a></li>
+										<li class="tour_li_2 tour_li"><a href="/tourplace/?tp=2">사찰/성당</a></li>
+										<li class="tour_li_3 tour_li"><a href="/tourplace/?tp=3">자연관광지</a></li>
+										<li class="tour_li_4 tour_li"><a href="/tourplace/?tp=4">기타관광지</a></li>
+										<li class="tour_li_5 tour_li"><a href="/tourplace/?tp=5">추천관광코스</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nth-7 ">
+								<a href="/reservation/?dd=Sws5TzdVKg==">예약확인</a>
+							</li>
+							<li>
+								<a href="">장단기숙박</a>
+							</li>
+							<li class="nth-6 ">
+								<a href="/reservation/">객실예약</a>
+							</li>
+						</ul>
+					</nav>
+					<button type="button" class="navTab-m show-xs" id="navTab-m">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<nav class="gNav-m hidden-md" id="gNav-m">
+						<ul class="gnb-m clr">
+							<li>
+								<a href="/intro/">콘도소개</a>
+							</li>
+							<li>
+								<a href="/gallery/">객실안내</a>
+							</li>
+							<li>
+								<a href="/facil/">부대시설</a>
+							</li>
+							<li>
+								<a href="/group/">단체문의</a>
+							</li>
+							<li>
+								<a href="/waycome/">오시는길</a>
+							</li>
+							<li>
+								<a href="/tourplace/">주변관광지</a>
+							</li>
+							<li>
+								<a href="/reservation/?dd=Sws5TzdVKnwt">예약확인</a>
+							</li>
+							<li>
+								<a href="/reservation/">객실예약</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!--<div class="title_txt">
+					<div>
+						<p>ORGANIZATION</p>
+						<p class="txt_gt">/</p>
+						<h2 class="bt_txt">
+						단체문의						</h2>
+					</div>
+				</div>-->
+			</div>
+		</header>
+		
+		<div style="" class="rWing">
+			<!-- 20180321 전체배너 group_bn.png 를 group_bn_01.png로 변경 -->
+			<!--<img src="http://img.bscondo.co.kr/group_bn_01.png" alt="" style="cursor:pointer" onclick="javascript:reserve_list_loca();">
+			<br>-->
+			<!-- 20180321 배너추가(단체문의에서만 추가되는 배너) -->
+			<img src="http://img.bscondo.co.kr/group_bn_02.png" alt="" style="cursor:pointer" onclick="javascript:faq_move();">
+		</div>
+		
+		<!-- 20180322 container 분리 -->	
+		<div class="container">
+			<section class="intro-sec clr">
+				<div class="d-row">
+					<p class="p-1 thColor2-2">
+						<strong>단체행사를 계획하고 있으신가요?</strong><br> 모든것이 완벽한 도고BS콘도에서 <br>아름다운 추억을 만들어 드립니다.
+					</p>
+					<div class="d-map">
+						<img src="http://img.bscondo.co.kr/group/org_01.jpg" alt="단체여행계획" />
+					</div>
+					<p class="p-2">
+						BS도고콘도는 천연 유황온천의 보양 휴양과편안한<br> 부대시설은 물론, 온천 워터파크 파라다이스 도고와<br> 단, 5분 거리, 리솜스파캐슬과 25분 거리에 있는 등<br> 뛰어난 접근성을 자랑합니다.
+					</p>
+					<p class="p-2 type-2">
+						또한 야구선수들의 전지훈련 단체숙박업소로도 각광받고 있습니다.
+					</p>
+					<hr class="sun">
+					<p class="txt_wr c-red">
+						BS콘도는 200객실의 대형리조트이며<br>
+						1,500명까지 동시 이용이 가능합니다.
+					</p>
+					<!--popOpen 클래스 제거-->
+					<p class="area-btn" id="group_mobile" style="cursor:pointer"><a class="" onclick="faq_move()">단체 문의하기 <span class="ic-rArrow"></span></a></p>
+					<!-- p class="area-btn"><a href="javascript:;" class="" onclick="$(window).scrollTop($('#etcSetTop').offset().top - $('#gnb-header').height());">단체 문의하기 <span class="ic-rArrow"></span></a></p -->
+				</div>
+			</section>
+			<hr>
+			<section class="room-sec">
+				<h2 class="h2-tit">BS도고콘도 객실 안내</h2>
+					<p class="p0">편안하고 아늑함을 마음 껏 즐길 수 있는 BS콘도 만의 공간</p>
+					<ul class="ul-list clr" id="roomList">
+						<li class="li-item nth-1">
+							<figure><img src="http://img.bscondo.co.kr/group/con_room00.jpg" alt="디럭스 온돌"></figure>
+							<div class="d-row-1">
+								<div class="s-name">스탠다드 온돌<span class="f-sm">(27평)</span>
+										<p class="d-row">(기준4인 / 최대6인)</p>
+									</div>
+								<a href="javascript:;" class="a-btn">자세히 보기</a>
+							</div>
+						</li>
+						<li class="li-item nth-2">
+							<figure><img src="http://img.bscondo.co.kr/group/con_room01.jpg" alt="디럭스 온돌"></figure>
+							<div class="d-row-1">
+								<div class="s-name">디럭스 온돌<span class="f-sm">(27평)</span>
+										<p class="d-row">(기준4인 / 최대6인)</p>
+									</div>
+								<a href="javascript:;" class="a-btn">자세히 보기</a>
+							</div>
+						</li>
+						<li class="li-item nth-3">
+							<figure><img src="http://img.bscondo.co.kr/group/con_room02.jpg" alt="디럭스 더블"></figure>
+							<div class="d-row-1">
+								<div class="s-name">디럭스 침대<span class="f-sm">(27평)</span>
+										<p class="d-row">(기준4인 / 최대6인)</p>
+									</div>
+								<a href="javascript:;" class="a-btn">자세히 보기</a>
+							</div>
+						</li>
+						<li class="li-item nth-4">
+							<figure><img src="http://img.bscondo.co.kr/group/con_room04.jpg" alt="디럭스 키즈"></figure>
+							<div class="d-row-1">
+								<div class="s-name">디럭스 키즈<span class="f-sm">(27평)</span>
+										<p class="d-row">(기준4인 / 최대6인)</p>
+									</div>
+								<a href="javascript:;" class="a-btn">자세히 보기</a>
+							</div>
+						</li>
+						<li class="li-item nth-5">
+							<figure><img src="http://img.bscondo.co.kr/group/con_room05.jpg" alt="스위트"></figure>
+							<div class="d-row-1">
+								<div class="s-name">스위트<span class="f-sm">(41평)</span>
+										<p class="d-row">(기준4인 / 최대8인)</p>
+									</div>
+								<a href="javascript:;" class="a-btn">자세히 보기</a>
+							</div>
+						</li>
+					</ul>
+
+			</section>
+			<hr>
+
+			<section class="facil-sec">
+				<h2 class="h2-tit">부대시설 안내</h2>
+				<p class="p0">한 자리에서 모든 것을 할 수 있는 BS콘도 만의 특별한 부대시설 안내</p>
+				<ul class="ul-list clr">
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_01.jpg" alt="바베큐장">
+							<figcaption>바베큐장</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_02.jpg" alt="한식당">
+							<figcaption>한식당</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_03.jpg" alt="대식당">
+							<figcaption>대식당</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_04.jpg" alt="연회장">
+							<figcaption>연회장</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_05.jpg" alt="노래방">
+							<figcaption>노래방</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_06.jpg" alt="편의점">
+							<figcaption>편의점</figcaption>
+						</figure>
+					</li>
+					<!-- 180820 분임토의실 수정 -->
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_08_2.jpg" alt="분임토의실(1~6호실)">
+							<figcaption>분임토의실(1~5호실)</figcaption>
+						</figure>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/facil_08.jpg" alt="분임토의실(1~6호실)">
+							<figcaption>분임토의실(7~8호실)</figcaption>
+						</figure>
+					</li>
+					<!-- // -->
+				</ul>
+				
+				<ul class="ul-list-2 clr">
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/music_01.jpg" class="hidden-xs" alt="춤연습장, 보컬연습실이 필요한 단체숙소로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/music_01.jpg" class="show-xs" alt="춤연습장, 보컬연습실이 필요한 단체숙소로 추천">
+							<figcaption>춤연습장, 보컬연습실이 필요한 단체숙소로 추천</figcaption>
+						</figure>
+                        <p class="li-txt ht-1"><span>걸그룹 댄스연습실, 아이돌 대형연습실, 보이그룹 춤연습실, 뮤지컬 연습실, 댄스연습장, 대형연습장, 춤연습장, 합숙연습실, 합숙연습장, 합숙연습, 보컬연습실</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/music_02.jpg" class="hidden-xs" alt="합주연습실이 필요한 단체숙소로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/music_02.jpg" class="show-xs" alt="합주연습실이 필요한 단체숙소로 추천">
+							<figcaption>합주연습실이 필요한 단체숙소로 추천</figcaption>
+						</figure>
+				        <p class="li-txt ht-1"><span>관현악단 합주실, 오케스트라 합주연습실, 국악관현악단 합주연습장, 악단 합숙연습, 뮤지컬악단 합주장소, 교향악단 합주연습장소, 현악단 연습장소, 교회현악단 합숙연습실, 교회관현악단 합숙연습장, 전자현악단 단체숙박, 국악현악단 단체숙소</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/groupEvent_01.jpg" class="hidden-xs" alt="초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/groupEvent_01.jpg" class="show-xs" alt="초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천">
+							<figcaption>초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천</figcaption>
+						</figure>
+                        <p class="li-txt"><span>수학여행, 체험학습, 수련회, 체육대회, MT, OT, 답사, 학회, 고적답사,<br>유적답사, 문화유적답사, 문화유산답사, 역사유산답사 등</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/groupEvent_02.jpg" class="hidden-xs" alt="회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/groupEvent_02.jpg" class="show-xs" alt="회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천">
+							<figcaption>회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천</figcaption>
+						</figure>
+				        <p class="li-txt"><span>워크샵, 세미나, 연수원, 기업OT, 기업행사, 야유회, 신녀회, 송년회,<br>환갑, 회갑, 돌잔치, 결혼식, 상견례, 환갑잔치, 칠순잔치 등</span></p>
+					</li>
+                </ul>
+				
+				<!-- 180214 버튼 추가 -->
+				<p class="area-btn"><a href="javascript:;" class="" onclick="faq_move()">단체 문의하기 <span class="ic-rArrow"></span></a></p>
+			</section>
+			
+			<hr>
+			
+			<!-- 180119 주변 관광지 안내 컨텐츠 수정 -->
+			<section class="facil-sec program-sec">
+				<h2 class="h2-tit">주변 관광지 안내</h2>
+				<p class="p0">더욱 알찬 여행을 즐기는 방법! 추천 주변 관광지를 소개합니다.</p>
+				<h3 class="h3-2">스파/온천 워터파크</h3>
+				<ul class="ul-list type-2 clr">
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_01.jpg" alt="주변관광지사진">
+							<figcaption>파라다이스 스파도고<br><span class="f-sm">도보 5분<span class="hidden-xs"> 소요 (500m 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_01_02.jpg" alt="주변관광지사진">
+							<figcaption>아산 스파비스<br><span class="f-sm">차량 20분<span class="hidden-xs"> 소요 (13km거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_01_03.jpg" alt="주변관광지사진">
+							<figcaption>리솜 스파캐슬<br><span class="f-sm">차량 25분<span class="hidden-xs"> 소요 (22km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_01_04.jpg" alt="주변관광지사진">
+							<figcaption>온양온천 신천탕<br><span class="f-sm">차량 35분<span class="hidden-xs"> 소요 (22km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+				</ul>
+				<h3 class="h3-2">휴양 관광지</h3>
+				<ul class="ul-list type-2 clr">
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_05.jpg" alt="주변관광지사진">
+							<figcaption>아산 레일바이크<br><span class="f-sm">차량 4분<span class="hidden-xs"> 소요 (2km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_06.jpg" alt="주변관광지사진">
+							<figcaption>피나클랜드<br><span class="f-sm">차량 20분<span class="hidden-xs"> 소요 (13km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_07.jpg" alt="주변관광지사진">
+							<figcaption>세계꽃식물원<br><span class="f-sm">차량 5분<span class="hidden-xs"> 소요 (3km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_08.jpg" alt="주변관광지사진">
+							<figcaption>코미디홀<br><span class="f-sm">차량 4분<span class="hidden-xs"> 소요 (2km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+				</ul>
+				<h3 class="h3-2">기타 관광지</h3>
+				<ul class="ul-list type-2 clr">
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_09.jpg" alt="주변관광지사진">
+							<figcaption>삽교함상공원<br><span class="f-sm">차량 30분<span class="hidden-xs"> 소요 (15km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_10.jpg" alt="주변관광지사진">
+							<figcaption>삽교호관광지<br><span class="f-sm">차량 30분<span class="hidden-xs"> 소요 (15km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_11.jpg" alt="주변관광지사진">
+							<figcaption>온양 민속박물관<br><span class="f-sm">차량 25분<span class="hidden-xs"> 소요 (10km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_12.jpg" alt="주변관광지사진">
+							<figcaption>외암민속마을<br><span class="f-sm">차량 25분<span class="hidden-xs"> 소요 (11km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+				</ul>
+				<h3 class="h3-2">사찰/성당</h3>
+				<ul class="ul-list type-2 clr">
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_13.jpg" alt="주변관광지사진">
+							<figcaption>현충사<br><span class="f-sm">차량 40분<span class="hidden-xs"> 소요 (13km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_14.jpg" alt="주변관광지사진">
+							<figcaption>공세리 성당<br><span class="f-sm">차량 40분<span class="hidden-xs"> 소요 (13km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item type-2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_15.jpg" alt="주변관광지사진">
+							<figcaption>봉곡사<br><span class="f-sm">차량 40분<span class="hidden-xs"> 소요 (10km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+					<li class="li-item nth-m2">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/park_16.jpg" alt="주변관광지사진">
+							<figcaption>세심사<br><span class="f-sm">차량 20분<span class="hidden-xs"> 소요 (10km 거리)</span></span></figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section>
+			<!-- 20180322 hr 제거 -->
+			<!--<hr id="etcSetTop">-->
+		</div>
+			
+		<!-- 20180322 단체예약QnA 추가-->
+		<div class="containerF">
+			<section class="qna-group">
+				<h2><span class="titBg"></span><span class="tit">BS콘도 단체예약 <span class="f-bd">Q&amp;A</span></span><span class="titBg"></span></h2>
+				<ul class="qna-list" id="qna-list">
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q1.</span>
+							<p>인원이 1,500명인데 이용 가능한가요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								오션투유리조트는 200 객실로, 1,500명 까지 이용 가능합니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q2.</span>
+							<p>기준인원 초과시 20,000원씩 내어야 하나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								단체이용건의 경우, 예상되는 총 인원수를 기준으로 사용할 객실 수를 정하고, 인원추가비가 포함된 이용요금이 책정되므로 별도의 추가요금은 없습니다.<br>
+								다만, 사전 협의된 인원이 초과된 경우에는, 추가 인원에 대해서 1인당 20,000원(1인, 1박기준)의 비용이 발생합니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q3.</span>
+							<p>단체로 가는데 할인되나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								단체이용 고객님들께는, 더 즐거운 행사가 되도록 더 많은 할인을 제공하고 있습니다.<br>
+								(이용일, 이용인원에 따라 할인율을 변경될 수 있습니다.)
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q4.</span>
+							<p>견적서는 언제 받을 수 있나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								단체문의 상담은 1년 365일, 24시간 언제나 가능합니다.<br>
+								다만, 견적서는 문서화 작업이 필요하므로, 접수(또는 전화문의)일 기준으로, 다음날 17시 까지는 수신가능합니다. (메일 또는 팩스)<br>
+								토요일 또는 공휴일전날 접숙건은 다음 영업일 17시까지는 견적서를 받으실 수 있습니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q5.</span>
+							<p>단체 이용시에도 체크인,체크아웃이 시간이 정해져 있나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								단체 이용에 불편함이 없도록, 행사일정에 따른 입퇴실 시간 변경이 가능합니다.(사전협의 필요)
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q6.</span>
+							<p>단체이용은 숙박만 해당하나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								아닙니다. BS리조트는 연회장, 세미나실, 바베큐장, 운동장,한식당 등 다양한 부대시설을 보유중이고, 어떤 행사에든 최적화된 공간과 기구를 제공하고 있습니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="f-q">
+							<span class="q-con">Q7.</span>
+							<p>방송시설이나 노래방기계가 있나요?</p>
+							<span class="ic-bArrow arr"></span>
+						</div>
+						<div class="f-a">
+							<p>
+								네.있습니다. 최신식 장비로 준비되어 있고 모든 행사에 이용가능합니다.(사전이용협의)<br>
+								아울러, 레크레이션 또는 세미나 강사 초빙 및 체험(파라다이스도고스파, 리솜스파캐슬, 아산스파비스, 레일바이크, 옹기박물관 등) 프로그램도 제공하고 있습니다.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+			
+		<!-- 20180322 container 분리 -->	
+		<div class="container">
+			<!--180124 단체문의팝업 페이지 내 추가 아이디 제거-->
+			<section class="etc-sec" id="etc-sec">
+				<div class="d-box-1 d-cm">
+					<p class="p-0">BS도고콘도가 행복과 즐거움을 책임집니다.</p>
+                    <!-- 20180404_텍스트 및 태그 추가 -->
+                    <p class="p-1 c-blue">단체여행 20년 경력의 특급여행플래너가 최적의 플랜을 제시해 드립니다.</p>
+					<p class="p-1">모든 것이 완벽한 BS콘도에서 아름다운 추억을 만들어보세요!</p>
+					<!--180319 추가-->
+					<p class="p-1 c-red mt-0">
+						BS콘도는 200객실의 대형리조트이며 1,500명까지 동시 이용이 가능합니다.
+					</p>
+					<!--End-->
+					
+					<div class="contact-pop type-2" id="contact-pop" style="z-index: 0;">
+						<div class="d-top i-chk-bef">
+							<span class="s-1">은 </span>필수 입력 사항입니다.
+						</div>
+						<ul class="ul-tb nece">
+							<li class="li-tr">
+								<span class="s-lbl i-chk-aft">예약자</span>
+								<input type="text" class="wd-1" name="name" maxlength="40">
+								<hr class="show-xs">
+								<span class="s-lbl i-chk-aft ml-1">연락처</span>
+								<input type="text" class="wd-2" name="tel1" onkeyup="util.checktype('number','tel1'); util.checknum('tel1', 'tel2','2');" maxlength="3">
+								<span class="mg-"></span>
+								<input type="text" class="wd-2" name="tel2" onkeyup="util.checktype('number','tel2'); util.checknum('tel2', 'tel3','3');" maxlength="4">
+								<span class="mg-"></span>
+								<input type="text" class="wd-2" name="tel3" onkeyup="util.checktype('number','tel3'); util.checknum('tel3', 'email','3');" maxlength="4">
+								<div class="show-xs"></div>
+							</li>
+							<li class="li-tr">
+								<span class="s-lbl i-chk-aft">이메일</span>
+								<input type="text" class="wd-3" name="email">
+							</li>
+						</ul>
+						<ul class="ul-tb">
+							<li class="li-tr">
+								<span class="s-lbl">단체명</span>
+								<input type="text" class="wd-1" name="d_name">
+								<hr class="show-xs">
+								<span class="s-lbl ml-1">행사분류</span>
+								<select name="h_gubun" id="h_gubun" class="wd-1 wd-1-2">
+									<option value="수련회">수련회</option>
+									<option value="워크샵/오티">워크샵/오티</option>
+									<option value="세미나/단체행사">세미나/단체행사</option>
+									<option value="학술모임">학술모임</option>
+									<option value="각종잔치">각종잔치</option>
+									<option value="기타">기타</option>
+								</select>
+							</li>
+							<li class="li-tr">
+								<span class="s-lbl">이용일</span>
+								<input type="text" class="wd-4 sdate hasDatepicker" name="date" placeholder="체크인" readonly="" id="dp1522820491327">
+								<select name="day" id="day" class="wd-1 wd-1-2">
+									<option value="당일">당일</option>
+									<option value="1박2일" selected="">1박 2일</option>
+									<option value="2박3일">2박 3일</option>
+									<option value="3박4일">3박 4일</option>
+									<option value="4박5일">4박 5일</option>
+									<option value="5박이상">5박 이상</option>
+								</select>
+							</li>
+							<li class="li-tr">
+								<span class="s-lbl">인원</span>
+								<span class="s-txt">남자</span>
+								<input type="text" class="wd-5" name="person_man" onkeyup="util.checktype('number','person_man'); n_sum();"><span>명</span>
+								<span class="s-txt">여자</span>
+								<input type="text" class="wd-5" name="person_her" onkeyup="util.checktype('number','person_her'); n_sum();"><span>명</span>
+								<span class="mg-l"></span>
+								<span class="s-txt">총 인원</span>
+								<input type="text" class="wd-6" name="person_all" value="0" disabled=""><span>명</span>
+							</li>
+							<li class="li-tr">
+								<span class="s-lbl">예산</span>
+								<input type="text" class="wd-7" name="ex_price" onchange="getNumber(this);" onkeyup="getNumber(this);" style="text-align:right;"><span>원</span>
+                                <!-- 20180404_텍스트 및 태그 추가 -->
+                                <p class="p-1 c-lightred">※ 고객님이 제시한 예산범위내에서 최적의 플랜을 제시해 드리겠습니다.</p>
+							</li>
+							<li class="li-tr">
+								<span class="s-lbl ver-t">기타요청</span>
+								<textarea name="content" id="" cols="30" rows="10" class="wd-8"></textarea>
+							</li>
+						</ul>
+					</div>
+					
+					<!--180124 popOpen 클래스 제거 -->
+					<p class="area-btn"><a class="a-btn" href="javascript:form_check();">단체 문의하기 <span class="ic-rArrow"></span></a></p>
+				</div>
+				<hr>
+				
+				<div class="d-box-2 d-cm">
+					<p class="p-0">단체 행사 문의에 대한 빠른 상담이 필요하신가요?</p>
+					<p class="p-1">단체 예약 전용 번호로 연락 주시면 담당자가 빠르게 안내해 드리겠습니다. </p>
+					<!--180612 내용추가-->
+					<p class="area-btn02"><a href="tel:010-9544-8281" class="a-btn"><span class="pic-call"></span> <span class="num">010-9544-8281</span> <span class="txt">(주중/주말 06시~02시)</span></a></p>
+					<p class="p-2"><img class="pic-sms" src="http://img.bscondo.co.kr/group/sms_icon.jpg" alt="이메일"> help@bscondo.co.kr</p>
+				</div>
+			</section>
+
+		</div>
+		
+		<div class="clr"></div>
+		
+		<!-- 20180321 텍스트 변경(단체문의에서만 변경되는 텍스트) -->
+<!--
+		<a href="javascript:faq_move()" class="rtBookingBn" id="rtBookingBn">
+			<img src="http://img.bscondo.co.kr/m/cal_img.png" alt="달력"><br>
+            단체견적<br>받기
+        </a>
+-->
+		
+		<!-- 20180321 접수완료 레이어 팝업 -->
+		<div class="group-popup">
+			<div class="popup-wrap">
+				<div class="popup-container">
+					<div class="popup-cust">
+						<p class="f-bd"><span class="fc-yellow">홍길동</span> 고객님!</p>
+						<p>오션투유 방문을 계획해 주셔서 감사합니다.</p>
+						<p class="popup-txt pd-tb">문의사항이 정상 접수 되었습니다.</p>
+						<p class="popup-txt">
+							문의에 대한 답변은 <span class="fc-yellow">2018년 03월 21일 17시</span> 까지 <br>
+							남겨주신 연락처 또는 이메일로 빠르게 안내해 드리겠습니다.
+						</p>
+					</div>
+					<p class="info-txt">
+						단체문의 관련 통화는 1년 365일 언제나 가능합니다.<br>
+						다만, 견적전달은 영업일에만 가능합니다.
+					</p>
+					<a class="btn-close" href="javascript:void(0);" onclick="popupClose('.group-popup');" >확 인</a>
+				</div>
+			</div>
+		</div>
+		<!--// -->
+
+		
+		<!-- 20180517 푸터 수정 / footer-2로 클래스 변경 -->
+		<footer class="footer-2">
+			<div class="container clr">
+
+				<ul class="f_menu clr">
+					<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .term-wrap').show();">이용약관</a></li>
+					<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .privacy-wrap').show();">개인정보처리방침</a></li>
+				</ul>
+
+				<!-- 20180517 텍스트 추가 및 수정 -->
+				<div class="cf-box clr">
+					<p class="p-0">고객센터 안내</p>
+				    <p class="p-1">문의사항에 따라 아래의 고객센터로 연락 부탁드립니다.</p>
+				    
+				    <!-- 20180517 태그 수정 및 변경 -->
+					<div class="cf-in">
+						<a class="callFor cf1 clr">
+							<p class="s1">예약문의<span class="s1-2">예약 확정, 변경, 취소 / 이벤트 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">1666-6701</span>
+							<span class="s3">(주중 09시 30분 ~ 25시 / 주말 09시 30분 ~ 24시)</span>
+						</a>
+						<a class="callFor cf2 clr">
+							<p class="s1">프론트<span class="s1-2">체크인, 체크아웃 / 시설이용 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">041-428-9422~3</span>
+							<span class="s3">(주중/주말 06시 ~ 02시)</span>
+						</a>
+						<a class="callFor cf3 clr">
+							<p class="s1">단체문의<span class="s1-2">워크샵, 학생, 산업단체 / 단체이용 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">010-9544-8281</span>
+							<span class="s3">(주중/주말 06시 ~ 02시)</span>
+							<!--180612 내용추가-->
+							<span class="s4"><img class="i-mail" src="http://img.bscondo.co.kr/group/icon_mail.jpg" alt="메일"> help@bscondo.co.kr</span>
+						</a>
+					</div>
+				</div>
+				<!--// -->
+				
+				<!-- 180529 수정 -->
+				<div class="flt-box clr">
+                    <div class="flt-1">
+                        <!-- 20180517 이미지 변경 -->
+                        <img class="f-logo" src="http://img.bscondo.co.kr/footer_logo2.png" alt="BS콘도 도고온천 호텔앤리조트">
+                    </div>
+
+                    <div class="flt-2">
+                        <address>
+                            <!-- 20180517 텍스트, 태그 추가 및 수정 -->
+                            <p class="nth-1">
+                                (주)비에스투어앤리조트<br>
+                                대표자 : 공병식<br>
+                                주소 : 충청남도 아산시 도고면 기곡로62번길 6-8<br>
+                                사업자등록번호 : 312-86-43769<br>
+                                통신판매업 : 2017-충남아산-0196<span class="intv"></span>▶사업자정보확인<br>
+                                관광사업등록번호 : 제 2013-000001호<span class="intv"></span>메일 : dogo121212@naver.com
+                                <!--<small>COPYRIGHT ⓒ (주)비에스투어앤리조트 ALL RIGHT RESERVED</small>-->
+                            </p>
+                        </address>
+                    </div>
+				</div>
+				
+				<!-- 180529 고코투어 추가 -->
+				<div class="flt-box clr">
+                    <div class="flt-1">
+                        <img class="f-logo goco" src="http://img.bscondo.co.kr/f_gcLogo.png" alt="최고의 할인여행 고코투어">
+                    </div>
+
+                    <div class="flt-2">
+                        <address>
+                            <p class="nth-1">
+                                (주)바로네트웍스<br>
+                                서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+                                사업자번호 : 332-85-00016<span class="intv type01"></span>통신판매업 : 제 2009-4290040-30-2-0033호<br>
+                                여행업등록번호 : 제2015-02호<br>
+                                여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>
+                                ※ 바로네트웍스는 BS콘도의 공식 온라인 총판으로서 온라인 예약 및<br> 결제를 대행합니다. 
+                            </p>
+                        </address>
+                    </div>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+	</div>
+	
+	<!-- 180214 스크립트 수정 -->
+	<script type="text/javascript">
+			function faq_move() {
+				$('html, body').stop().animate({
+					//scrollTop: $($_anchor.attr('href')).offset().top - 150
+					scrollTop: ($(".etc-sec").offset().top - $('#gnb-header').height()-25) //150대신 $('#gnb-header').height()-25 으로 적용해주세요!
+				}, 800);
+				event.preventDefault();
+			}
+		</script>
+		
+</body>
+</html>
