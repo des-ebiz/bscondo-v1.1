@@ -132,7 +132,7 @@
 
 @media (max-device-width: 320px){
     /* 190130 설날 & 조식 팝업 */
-    #newEvtPop {margin-left: -160px;}
+    #newEvtPop {top: 4%; margin-left: -160px;}
     #newEvtPop .pop-container {width: 320px;}
     #newEvtPop .pop-evt-list .nth-2 {padding: 24px 8px 4px;}
     #newEvtPop .pop-evt-list {height: 429px;}

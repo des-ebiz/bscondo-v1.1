@@ -61,3 +61,7 @@
 
 /* 190116 메뉴 하단 띠배너추가 */
 .tbn-area {margin-top: 50px;}
+
+/* 190130 얼리체크인&레이트체크아웃 팝업 */
+#checkPop {text-align: center;}
+#checkPop .pop-container {display: inline-block;}

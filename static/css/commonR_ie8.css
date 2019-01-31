@@ -196,9 +196,8 @@ display: block !important;
 .pop-wrap .pop-container {position: relative; box-sizing: border-box; margin: 0 auto;}
 .pop-wrap .pop-container .pop-tit {text-align: center;}
 /* 이미지 닫기 버튼 */
-.pop-wrap .pop-container .btn-close-2 {position: absolute; box-sizing: border-box; display: block; width: 54px; height: 54px; top: -54px; right: 0; padding-top: 10px; text-align: center; background: #000;}
-.pop-wrap .pop-container .btn-close-2 span {display: inline-block; overflow: hidden; width: 33px; height: 33px; font-size: 0; text-indent: -9999px; background: url(http://img.bscondo.co.kr/btn_pop_close.png) no-repeat center center; background-size: 33px auto;}
-/* 슬라이드 : 오늘하루동안 보지않기 & 닫기 */
+.pop-wrap .pop-container .btn-close-2 {position: absolute; box-sizing: border-box; display: block; width: 54px; height: 54px; top: -54px; right: 0; text-align: center; background: #000 url(http://img.bscondo.co.kr/btn_pop_close.png) no-repeat center center; background-size: 33px auto;}
+.pop-wrap .pop-container .btn-close-2 span {display: inline-block; overflow: hidden; font-size: 0; text-indent: -9999px;}
 /* 버튼박스 */
 .pop-wrap .btn-box {z-index: 110; position: relative; box-sizing: border-box; padding: 30px 20px 15px; background: rgba(0, 0, 0, 0.56); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#60000000,endColorStr=#60000000)";}
 .pop-wrap .btn-box .day-check, .pop-wrap .btn-box .btn-close {float: left; display: inline-block; width: 47.5%; height: 34px; text-align: center; background: #212020;}
