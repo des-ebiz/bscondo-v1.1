@@ -15,23 +15,27 @@ display: block !important;
 .header .hd-area .gNav {float: right; top: 0px;}
 .header .hd-area .gNav .gnb {text-align: center; float: right;}
 
-.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 13px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
+.header .hd-area .gNav .gnb > li {padding-top: 0;}
+.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 20px; height: 90px; line-height: 90px; font-size: 20px; color: #ffffff; font-weight: 600;}
 .header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
 .header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
 .header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
 .header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
 .header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+.header .hd-area [class^=gNavDep] {height: 50px;}
 .header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
 .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
 .header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
 .header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
-.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 50px; margin-left: 50px;  color: #fff; font-size: 17px;}
 .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
 .header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
 
-.header .d1 {position: absolute; right:700px; /* right: 584px; */ top: 32px;}
-.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
-/*	.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}*/
+.header.type-2 .hd-area .gNav .gnb > li {padding-top: 40px;}
+.header.type-2  .hd-area .gNav .gnb > li > a {height: 50px; line-height: 50px;}
+
+.header .d1 {position: absolute; right: 134px; top: 15px;}
+.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
 
 .faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}
 
@@ -164,13 +168,43 @@ display: block !important;
 .privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
 .term-warp {}
 
-.header .hd-area .gNav .gnb > li > a {padding: 0 20px; font-size: 20px;}
-.header .hd-area [class^=gNavDep] {height: 50px;}
-.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
+    
+/* 190116 메뉴 하단 띠배너추가 */
+.tbn-area {position: relative; width: 100%; text-align: center;}
+.tbn-area .bn-box {position: relative; display: block; box-sizing: border-box; width: 980px; margin: 0 auto;}
+/* 이미지배너 */
+.tbn-area .tbn-box {position: relative; display: block; max-width: 100%; margin: 0 auto;}
+.tbn-area .tbn-box .bn-box {}
+.tbn-area .tbn-box .bn-box img {position: relative; text-align: center;}
 
-.header .d1 {position: absolute; right:994px; top: 29px;}
-.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 17px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
-/*.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}
-.header.on .d1 .faq-a {font-weight: 500; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}*/
+.tbn-area .tbn-box.spa {padding: 13px 0 8px; background: #dfd9bf;}
+.tbn-area .tbn-box.group {padding: 0; background: #fee0d2;}
+/* 텍스트배너 */
+.tbn-area .bn-txt-box {}
+.tbn-area .bn-txt-box .bn-box {text-align: left;}
+.tbn-area .bn-txt-box .bn-box .bn-img, .tbn-area .bn-txt-box .bn-box .txt {display: inline-block; vertical-align: middle;}
+.tbn-area .bn-txt-box .bn-box .bn-img {width: 88px; margin-left: 80px; margin-right: 12px;}
+.tbn-area .bn-txt-box .bn-box .c-blue {color: #0076ef; font-size: 18px;}
+.tbn-area .bn-txt-box .bn-box .txt {word-break: keep-all;}
 
+.tbn-area .bn-txt-box.amenity {padding: 12px 0; background: #fffce8;} 
+
+/* 190130 팝업 */
+.pop-wrap {z-index: 99; position: fixed; box-sizing: border-box; top: 0; left: 0;}
+.pop-wrap * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.pop-bg {overflow: hidden; overflow-y: scroll; width: 100%; height: 100%; padding-top: 82px; padding-bottom: 82px; background: rgba(0, 0, 0, 0.5); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#60000000,endColorStr=#60000000)";}
+.pop-wrap .pop-container {position: relative; box-sizing: border-box; margin: 0 auto;}
+.pop-wrap .pop-container .pop-tit {text-align: center;}
+/* 이미지 닫기 버튼 */
+.pop-wrap .pop-container .btn-close-2 {position: absolute; box-sizing: border-box; display: block; width: 54px; height: 54px; top: -54px; right: 0; padding-top: 10px; text-align: center; background: #000;}
+.pop-wrap .pop-container .btn-close-2 span {display: inline-block; overflow: hidden; width: 33px; height: 33px; font-size: 0; text-indent: -9999px; background: url(http://img.bscondo.co.kr/btn_pop_close.png) no-repeat center center; background-size: 33px auto;}
+/* 슬라이드 : 오늘하루동안 보지않기 & 닫기 */
+/* 버튼박스 */
+.pop-wrap .btn-box {z-index: 110; position: relative; box-sizing: border-box; padding: 30px 20px 15px; background: rgba(0, 0, 0, 0.56); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#60000000,endColorStr=#60000000)";}
+.pop-wrap .btn-box .day-check, .pop-wrap .btn-box .btn-close {float: left; display: inline-block; width: 47.5%; height: 34px; text-align: center; background: #212020;}
+.pop-wrap .btn-box .day-check input, .pop-wrap .btn-box .btn-close span {display: block; width: 100%; font-size: 16px; line-height: 34px; color: #fff;}
+.pop-wrap .btn-box .day-check {}
+.pop-wrap .btn-box .day-check input {cursor: pointer; border: 0; background: none;}
+.pop-wrap .btn-box .btn-close {margin-left: 5%;}
+.pop-wrap .btn-box .btn-close span {}
 

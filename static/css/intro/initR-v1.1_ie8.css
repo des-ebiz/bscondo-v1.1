@@ -9,7 +9,9 @@
 .main-contents2 .area-tit > h3 {font-size: 46px;}
 .main-contents2 .area-tit > p {font-size: 27px; margin-top: 5px;}
 .main-contents2 .bg-img {background: #000 url(http://img.bscondo.co.kr/intro/intro_bg.jpg) no-repeat center top; height: 1016px;}
-.main-contents2 .resortImg {display: block; margin: 50px auto 0;}
+.main-contents2 .resortImg {position: relative; display: block; margin: 50px auto 0;}
+.main-contents2 .resortImg img {position: relative; box-sizing: border-box;}
+.main-contents2 .resortImg .img-spa {padding: 13px 0 8px; background: #dfd9bf;}
 /* 181206 온양온천 시티투어 추가 다솜 */
 .main-contents2 .resortBn {display: block; margin: 0 auto;}
 .main-contents2 .resortBn a {position: relative; width: 980px; margin: 0 auto;}
@@ -30,7 +32,7 @@
 .main-contents2 .btn-area .btn-a.a-1 .rArrow:after {border-color: #ecb84a;}
 .main-contents2 .btn-area .btn-a.a-2 .rArrow:after {border-color: #fff;}
 
-/* 20180228_날씨추가_다솜 */
+/* 20180228 날씨추가 다솜 */
 .wing-box {display:block; margin:0 auto; text-align:center; }
 .weath-wrap {z-index:21; display:block; position:relative; overflow:hidden; width:305px; height:58px; border:2px solid rgba(255, 255, 255, 0.33); border-radius:50px; margin-top: 25px;}
 .weath-wrap .weath-box {display:table; position:relative; box-sizing:border-box; width:100%; height:100%; padding:0 13px 1px; border-radius:50px; background: rgba(0, 0, 0, 0.33);}
@@ -47,5 +49,47 @@
 .weath-wrap .weath-box .tem-txt .tem-num {min-width:38px; padding-right:4px; font-size:34px; text-align:right; line-height:34px;}
 .weath-wrap .weath-box .tem-txt .tem-cel {position:absolute; font-size:24px; top:12px}
 
-/* 20180518_푸터 수정_다솜 */
+/* 20181214 온천수 텍스트 추가 다솜 */
+.spa-box {position: relative; margin: 26px 0 0 0; padding-left: 162px; font-weight: bolder; line-height: 26px; letter-spacing: -1px; background: url(http://img.bscondo.co.kr/spa_txt.png) no-repeat left top;}
+.spa-box .spa-tit {padding-top: 3px; font-size: 24px; color: #ff9f32;}
+.spa-box .spa-txt {font-size: 16px; color: #fffbca;}
+
+/* 20180518 푸터 수정 다솜 */
 .footer-2 {margin-top:0;}
+    
+/* 190130 설날 & 조식 팝업 */
+#newEvtPop {top: 65px; left: 50%; margin-left: -250px;}
+#newEvtPop .bx-wrapper {background: none;}
+#newEvtPop .pop-container {position: relative; overflow: hidden; box-sizing: border-box; width: 500px;}
+#newEvtPop .pop-evt-list {position: relative; overflow: hidden; box-sizing: border-box; width: 100%; height: 671px;}
+#newEvtPop .pop-evt-list li[class*='nth-'] {box-sizing: border-box; height: 100%;}
+/* 설날 */
+#newEvtPop .pop-evt-list .nth-1 .p-1 {position: absolute; box-sizing: border-box; width: 100%; height: 230px; left: 0; bottom: 60px;}
+#newEvtPop .pop-evt-list .nth-1 .p-1 span {position: absolute; display: inline-block; font-size: 12px; color: #636363;}
+#newEvtPop .pop-evt-list .nth-1 .p-1 .s-1 {left: 90px; bottom: 0;}
+#newEvtPop .pop-evt-list .nth-1 .p-1 .s-2 {right: 45px; bottom: 20px;}
+#newEvtPop .pop-evt-list .nth-1 .p-1 .s-3 {top: 12px; right: 130px;}
+/* 조식 - ie8에서 padding, width 간격 조정. */
+#newEvtPop .pop-evt-list .nth-2 {padding: 56px 41px 22px 39px; text-align: center; background: url(http://img.bscondo.co.kr/pop/freeBf_bg.jpg) no-repeat center; background-size: 500px auto;}
+#newEvtPop .pop-evt-list .nth-2 .bf-tit {}
+#newEvtPop .pop-evt-list .nth-2 .bf-tit img {margin: 0 auto;}
+#newEvtPop .pop-evt-list .nth-2 p {letter-spacing: -1px; color: #3c2415;}
+#newEvtPop .pop-evt-list .nth-2 .p-0 {padding: 15px 0 0; font-size: 20px; line-height: 26px; font-weight: 600;}
+#newEvtPop .pop-evt-list .nth-2 .p-0 em {font-weight: 800; color: #880c19;}
+#newEvtPop .pop-evt-list .nth-2 .p-1 {font-size: 16px; line-height: 24px;}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area {display: inline-block; margin: 0 auto; margin-top: 13px; text-align: center;}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area .bf-list-box {display: inline-block; float: left; width: 135px; margin-left: 7px;}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area .bf-list-box:first-child {margin-left: 0;}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area .bf-list-tit {width: 116px; height: 32px; margin: 0 auto; font-size: 16px; font-weight: 800; line-height: 32px; text-align: center; color: #fff; border-radius: 30px; background: #880c19;}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area .bf-list-txt {margin-top: 7px; /*height: 120px;*/}
+#newEvtPop .pop-evt-list .nth-2 .bf-list-area .bf-list-txt li {font-size: 13px; line-height: 19px; letter-spacing: -1px; color: #3c2415;}
+
+#newEvtPop .pop-evt-list .nth-2 .bf-info-list {margin-top: 10px;}
+#newEvtPop .pop-evt-list .nth-2 .bf-info-list li {position: relative; padding-left: 10px; font-size: 14px; line-height: 24px; text-align: left; letter-spacing: -1.2px; color: #3c2415;}
+#newEvtPop .pop-evt-list .nth-2 .bf-info-list li:before {content: ''; display: block; position: absolute; width: 4px; height: 4px; top: 10px; left: 0; border-radius: 50%; background: #3c2415;}
+
+/* 불릿 */
+#newEvtPop .bx-wrapper .bx-pager {z-index: 111; padding-top: 0; bottom: -20px;}
+#newEvtPop .bx-wrapper .bx-pager-item {}
+#newEvtPop .bx-wrapper .bx-pager.bx-default-pager a {background: rgba(255, 255, 255, 0.46); -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#50ffffff,endColorStr=#50ffffff)";}
+#newEvtPop .bx-wrapper .bx-pager.bx-default-pager a:hover, #newEvtPop .bx-wrapper .bx-pager.bx-default-pager a.active {background: #fff;}

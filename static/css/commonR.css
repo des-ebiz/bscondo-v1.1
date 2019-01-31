@@ -82,10 +82,10 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 /*.header .hd-area .glb {position: relative; border-bottom: 1px solid #fff; height: 90px; z-index: 1;}
 .header.on .hd-area .glb {position: fixed; top: 0px; width: 100%; background: #221e1f; border-bottom: 0;}*/
 
-.rWing {position: fixed; top: 220px; z-index: 9; left: 50%; margin-left: 520px;}
-.rWing img {display:block; margin-bottom:1px;}
+.rWing {position: fixed; top: 220px; z-index: 65; left: 50%; margin-left: 520px;}
+.rWing img {display:block; margin: 0 auto 1px;}
 /* .rWing img + img {display: block; margin-top:10px;} */
-.m-rWing {z-index:9; position:absolute; width:100px; /*height:71px;*/ right:19px; margin-top:52%;}
+.m-rWing {z-index:65; position:absolute; width:100px; /*height:71px;*/ right:19px; margin-top:52%;}
 .m-rWing img {width:100%;}
 
 
@@ -237,6 +237,47 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	/* 20180214_실시간 예약 버튼 추가_다솜 */
 	.rtBookingBn {z-index:53;position: fixed; display: block; right: 6px; bottom: 65px;background: rgba(255, 155, 17, 0.76); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
 	.rtBookingBn img {width: 19px; margin-bottom: 2px;}
+    
+	/* 190116 메뉴 하단 띠배너추가 */
+    .tbn-area {position: relative; width: 100%; text-align: center;}
+	.tbn-area .bn-box {position: relative; display: block; margin: 0 auto; text-align: center; letter-spacing: -0.5px;}
+    /* 이미지배너 */
+    .tbn-area .tbn-box {display: block; width: 100%;}
+    .tbn-area .tbn-box .bn-box {max-width: 100%;}
+    .tbn-area .tbn-box .bn-box img {position: relative; width: 100%; max-width: 640px;}
+    
+    .tbn-area .tbn-box.spa {padding: 13px 0 8px; background: #dfd9bf;}
+    .tbn-area .tbn-box.group {padding: 0; background: #fee0d2;}
+    /* 텍스트배너 */
+	.tbn-area .bn-txt-box {width: 100%;}
+    .tbn-area .bn-txt-box .bn-box {width: 100%; max-width: 640px;}
+	.tbn-area .bn-txt-box .bn-box .bn-img, .tbn-area .bn-txt-box .bn-box .txt {display: inline-block; vertical-align: middle;}
+    .tbn-area .bn-txt-box .bn-box .bn-img {width: 70px; margin-right: 5px;}
+	.tbn-area .bn-txt-box .bn-box .c-blue {color: #0076ef; font-size: 12.5px;}
+	.tbn-area .bn-txt-box .bn-box .txt {font-size: 12px; word-break: keep-all; text-align: left; width: 72%;}
+    
+	.tbn-area .bn-txt-box.amenity {padding: 12px 0; background: #fffce8;} 
+
+    /* 190130 팝업 */
+    .pop-wrap {z-index: 99; position: fixed; box-sizing: border-box; top: 0; left: 0;}
+    .pop-wrap * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+    .pop-bg {overflow: hidden; overflow-y: scroll; width: 100%; height: 100%; padding-top: 60px; padding-bottom: 30px; background: rgba(0, 0, 0, 0.5);}
+    .pop-wrap .pop-container {position: relative; box-sizing: border-box; margin: 0 auto;}
+    .pop-wrap .pop-container img {position: relative; width: 100%;}
+    .pop-wrap .pop-container .pop-tit {text-align: center;}
+    /* 이미지 닫기 버튼 */
+    .pop-wrap .pop-container .btn-close-2 {position: absolute; box-sizing: border-box; display: block; width: 30px; height: 30px; top: -30px; right: 0; padding-top: 5px; text-align: center; background: #000;}
+    .pop-wrap .pop-container .btn-close-2 span {display: inline-block; overflow: hidden; width: 18px; height: 18px; font-size: 0; text-indent: -9999px; background: url(http://img.bscondo.co.kr/btn_pop_close.png) no-repeat center center; background-size: 18px auto;}
+    /* 슬라이드 : 오늘하루동안 보지않기 & 닫기 */
+    /* 버튼박스 */
+    .pop-wrap .btn-box {z-index: 110; position: relative; box-sizing: border-box; padding: 23px 10px 10px; background: rgba(0, 0, 0, 0.56);}
+    .pop-wrap .btn-box .day-check, .pop-wrap .btn-box .btn-close {float: left; display: inline-block; width: 47.5%; height: 24px; text-align: center; background: #212020;}
+    .pop-wrap .btn-box .day-check input, .pop-wrap .btn-box .btn-close span {display: block; width: 100%; font-size: 13px; line-height: 24px; color: #fff;}
+    .pop-wrap .btn-box .day-check {}
+    .pop-wrap .btn-box .day-check input {cursor: pointer; border: 0; background: none;}
+    .pop-wrap .btn-box .btn-close {margin-left: 5%;}
+    .pop-wrap .btn-box .btn-close span {}
+    
 }
 @media (max-width: 767px) {
 	.rWing {display: none;}
@@ -263,8 +304,9 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.contact-pop .li-tr .wd-5 + span, .contact-pop .li-tr .wd-6 + span {margin-left: 1px;}
 	.contact-pop .li-tr .wd-8 {width: 228px;}
 	
+    /* 190130 팝업 */
+    .pop-bg {padding-top: 50px; padding-bottom: 15px;}
 }
-
 
 @media (min-width: 980px) {
 	.container {width: 980px;}
@@ -276,10 +318,11 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.header .hd-area .gNav {float: right; top: 0px;}
 	.header .hd-area .gNav .gnb {text-align: center; float: right;}
 
+    .header .hd-area .gNav .gnb > li {padding: 0;}
 	.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 13px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
 	.header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
-	.header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
-	.header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
+	.header .hd-area .gNav .gnb > li.nth-6 {display: block; padding-top: 0; background: #ecb84a;}
+	.header .hd-area .gNav .gnb > li.nth-6 a  {height: 90px; line-height: 90px; color: #fff;}
 	.header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
 	.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
 	.header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
@@ -290,12 +333,15 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
 	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
 	
-	.header .d1 {position: absolute; right:700px; /* right: 584px; */ top: 32px;}
-	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
-/*	.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}*/
-
-	/*.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}*/
-	
+	.header .d1 {position: absolute; right: 94px; /* right: 584px; */ top: 17px;}
+	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 13px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+    
+    .header.type-2 .hd-area .gNav .gnb > li {padding-top: 30px;}
+	.header.type-2 .hd-area .gNav .gnb > li > a {height: 60px; line-height: 60px;}
+    
+    
+    
+    
     /* 20180516_푸터 디자인 수정_다솜 */
 	.footer-2 {/*min-height: 250px;*/ margin-top:40px; padding:45px 0 100px 0; background:#323232;}
 	.footer-2 .container {position:relative; box-sizing:border-box; width:1250px; margin:0 auto; /*padding-left:50px;*/}
@@ -423,18 +469,63 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.privacy-bg .cm-s .d-cont .title {display: block; margin-top: 10px;}
 	.privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
 	.term-warp {}
+    
+	/* 190116 메뉴 하단 띠배너추가 */
+    .tbn-area {position: relative; width: 100%; text-align: center;}
+	.tbn-area .bn-box {position: relative; box-sizing: border-box; width: 980px; margin: 0 auto;}
+    /* 이미지배너 */
+    .tbn-area .tbn-box {position: relative; display: block; max-width: 100%; margin: 0 auto;}
+    .tbn-area .tbn-box .bn-box {}
+    .tbn-area .tbn-box .bn-box img {position: relative; text-align: center;}
+    
+    .tbn-area .tbn-box.spa {padding: 13px 0 8px; background: #dfd9bf;}
+    .tbn-area .tbn-box.group {padding: 0; background: #fee0d2;}
+    /* 텍스트배너 */
+	.tbn-area .bn-txt-box {}
+    .tbn-area .bn-txt-box .bn-box {text-align: left;}
+	.tbn-area .bn-txt-box .bn-box .bn-img, .tbn-area .bn-txt-box .bn-box .txt {display: inline-block; vertical-align: middle;}
+	.tbn-area .bn-txt-box .bn-box .bn-img {width: 88px; margin-left: 80px; margin-right: 12px;}
+	.tbn-area .bn-txt-box .bn-box .c-blue {color: #0076ef; font-size: 18px;}
+	.tbn-area .bn-txt-box .bn-box .txt {word-break: keep-all;}
+    
+	.tbn-area .bn-txt-box.amenity {padding: 12px 0; background: #fffce8;}
+    
+    /* 190130 팝업 */
+    .pop-wrap {z-index: 99; position: fixed; box-sizing: border-box; top: 0; left: 0;}
+    .pop-wrap * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+    .pop-bg {overflow: hidden; overflow-y: scroll; width: 100%; height: 100%; padding-top: 82px; padding-bottom: 82px; background: rgba(0, 0, 0, 0.5);}
+    .pop-wrap .pop-container {position: relative; box-sizing: border-box; margin: 0 auto;}
+    .pop-wrap .pop-container .pop-tit {text-align: center;}
+    /* 이미지 닫기 버튼 */
+    .pop-wrap .pop-container .btn-close-2 {position: absolute; box-sizing: border-box; display: block; width: 54px; height: 54px; top: -54px; right: 0; padding-top: 10px; text-align: center; background: #000;}
+    .pop-wrap .pop-container .btn-close-2 span {display: inline-block; overflow: hidden; width: 33px; height: 33px; font-size: 0; text-indent: -9999px; background: url(http://img.bscondo.co.kr/btn_pop_close.png) no-repeat center center; background-size: 33px auto;}
+    /* 슬라이드 : 오늘하루동안 보지않기 & 닫기 */
+    /* 버튼박스 */
+    .pop-wrap .btn-box {z-index: 110; position: relative; box-sizing: border-box; padding: 30px 20px 15px; background: rgba(0, 0, 0, 0.56);}
+    .pop-wrap .btn-box .day-check, .pop-wrap .btn-box .btn-close {float: left; display: inline-block; width: 47.5%; height: 34px; text-align: center; background: #212020;}
+    .pop-wrap .btn-box .day-check input, .pop-wrap .btn-box .btn-close span {display: block; width: 100%; font-size: 16px; line-height: 34px; color: #fff;}
+    .pop-wrap .btn-box .day-check {}
+    .pop-wrap .btn-box .day-check input {cursor: pointer; border: 0; background: none;}
+    .pop-wrap .btn-box .btn-close {margin-left: 5%;}
+    .pop-wrap .btn-box .btn-close span {}
+    
+    
 }
 @media (min-width: 981px) and (max-width: 1024px) {
-	.header .d1 {right: 596px;}
-	.header .hd-area .gNav .gnb > li > a {padding: 0 6px;}	
+	.header .d1 {right: 80px;}
+	.header .hd-area .gNav .gnb > li > a {padding: 0 8px;}	
 }
 @media (min-width: 1370px) {
-	.header .hd-area .gNav .gnb > li > a {padding: 0 20px; font-size: 20px;}
+    .header .hd-area .gNav .gnb > li {padding-top: 0;}
+	.header .hd-area .gNav .gnb > li > a {height: 90px; padding: 0 20px; font-size: 20px; line-height: 90px;}
 	.header .hd-area [class^=gNavDep] {height: 50px;}
 	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
 	
-	.header .d1 {position: absolute; right:994px; top: 29px;}
-	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 17px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+	.header .d1 {position: absolute; right: 134px; top: 15px;}
+	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+    
+    .header.type-2 .hd-area .gNav .gnb > li {padding-top: 40px;}
+	.header.type-2  .hd-area .gNav .gnb > li > a {height: 50px; line-height: 50px;}
 	/*.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}
 	.header.on .d1 .faq-a {font-weight: 500; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}*/
 }

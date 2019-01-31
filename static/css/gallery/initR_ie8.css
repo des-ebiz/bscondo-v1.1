@@ -23,8 +23,8 @@
 .main-contents .room_wr h3 {margin-bottom: 15px; font-size: 35px; text-align: left; font-weight: bold; color: #474646; line-height: 1;}
 .main-contents .drx_txt {font-size: 16px; text-align: left;}
 .main-contents .drx_txt th,.drx_txt td {padding: 5px 5px; vertical-align: top; word-break: keep-all;}
-.main-contents .drx_txt th {font-weight: bold; color: #474646; letter-spacing: -1px; width: 17%;}
-.main-contents .drx_txt td {width: 83%; letter-spacing: -0.6px;}
+.main-contents .drx_txt th {font-weight: bold; color: #474646; letter-spacing: -1px; width: 17%;} /* ie8일때 letter-spacing 수정 */
+.main-contents .drx_txt td {width: 83%; letter-spacing: -1px;}
 .main-contents .drx_txt td .t-point {display: inline-block; color: #fe1200;}
 .main-contents .txt_Wr {padding: 10px 0;}
 .main-contents .txt_Wr .d_txt {font-size: 16px; text-align: left; word-break: keep-all;}
@@ -34,6 +34,16 @@
 .main-contents .btn-area {position: absolute; bottom: 35px; text-align: center; margin: 15px auto 0;}
 .main-contents .btn-area .a-btn {display: inline-block; width: 200px; background: #d0904b; color: #fff; font-size: 20px; height: 50px; line-height: 52px;}
 .main-contents .btn-area .a-btn .rArrow:after {border-color: #fff; border-width: 4px; top: -1px; width: 8px; height: 8px; left: 5px;}
+
+/* 190130 체크인/아웃 서비스 자세히보기 버튼 추가 */
+/* ie8일때 간격 조정 */
+.main-contents .check-btn-box {position: relative; box-sizing: border-box; max-width: 480px; margin-top: 28px; padding: 12px 15px 11px 18px; text-align: left; background: #f7f7f7;}
+.main-contents .check-btn-box .check-txt {}
+.main-contents .check-btn-box .check-txt p {line-height: 22px; letter-spacing: -1px; color: #333;}
+.main-contents .check-btn-box .check-txt p em {font-weight: bold; color: #365397;}
+.main-contents .check-btn-box .check-txt .p-1 {font-size: 16px;}
+.main-contents .check-btn-box .check-txt .p-2 {font-size: 15px;}
+.main-contents .check-btn-box .btn-view {position: absolute; display: inline-block; height: 30px; top:50%; right: 15px; margin-top: -15px; padding: 0 18px; font-size: 13px; line-height: 30px; color: #333; border: 1px solid #aaa; background: #fff;}
 
 .d-part.nth-2, .d-part.nth-4 {background: #f7f7f7;}
 
@@ -48,13 +58,6 @@
 .main-contents .area-arctic > .d-1 {padding-right: 8px;}
 .main-contents .area-arctic > .d-2 {padding-left: 15px; border-left: 1px solid #a3b0c2; color: #285ba7; text-align: left; width: 78%; font-size: 15px;}
 
-/* 181214 온천수 띠배너 추가 다솜 */
-.bn-spa-area {position: relative; /*z-index: 58; position: fixed;*/ width: 100%; margin-top: 15px; text-align: center; background: #dfd9bf;}
-.bn-spa-area .bn-spa-box {position: relative; display: inline-block; max-width: 100%; margin: 0 auto; padding: 13px 0 8px;}
-.bn-spa-area .bn-spa-box img {position: relative;}
-.bn-amenity-area {background: #fffce8; padding: 12px 0;}
-.bn-amenity-area .bn-box {width: 980px; margin: 0 auto;}
-.bn-amenity-area .bn-box .bn-img, .bn-amenity-area .bn-box .txt {display: inline-block; vertical-align: middle;}
-.bn-amenity-area .bn-box .bn-img {width: 88px; margin-left: 80px; margin-right: 12px;}
-.bn-amenity-area .bn-box .c-blue {color: #0076ef; font-size: 18px;}
-.bn-amenity-area .bn-box .txt {word-break: keep-all;}
+
+/* 190116 메뉴 하단 띠배너추가 */
+.tbn-area {margin-top: 50px;}

@@ -47,3 +47,49 @@
 .main-contents .bbq-part .d-bottom .dot {position: relative; padding-left: 18px;}
 .main-contents .bbq-part .d-bottom .dot:before {content: "※"; position: absolute; left: 0;}
 .main-contents .bbq-part .d-bottom .pl-1 {position: relative; padding-left: 16px;}
+
+/* 190130 바베큐 리뉴 */
+.main-contents .bbq-part-2 {position: relative; margin: 0 auto; text-align: center; padding: 37px 0 20px;}
+.main-contents .bbq-part-2 * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
+.main-contents .bbq-part-2 .fc-orange {color: #d46900;}
+/* 상단 */
+.main-contents .bbq-part-2 .d-top {}
+.main-contents .bbq-part-2 .d-top strong {display: inline-block; padding: 11px 35px 10px; font-size: 23px; font-weight: 800; line-height: 23px; color: #303030; border-top: 1px solid #303030; border-bottom: 1px solid #303030;}
+.main-contents .bbq-part-2 .d-top h2 {margin-top: 13px; font-size: 35px; font-weight: 500; line-height: 50px; color: #353535;}
+.main-contents .bbq-part-2 .d-top .p-0 {font-size: 35px; font-weight: 100; line-height: 50px; color: #353535;}
+/* 이미지 */
+.main-contents .bbq-part-2 .d-intro {position: relative; margin-top: 24px;}
+.main-contents .bbq-part-2 .d-intro figure {}
+.main-contents .bbq-part-2 .d-intro figure img {}
+.main-contents .bbq-part-2 .d-intro .right {position: absolute; top: 50%; right: 20px; margin-top: -192px;}
+.main-contents .bbq-part-2 .d-intro .right img {}
+/* 콘텐츠 */
+.main-contents .bbq-part-2 .d-cont {}
+.main-contents .bbq-part-2 .d-cont .d-row {display: table; box-sizing: border-box; width: 100%; /*width: 725px;*/ margin: 0 auto; margin-top: 33px; padding: 0 115px;}
+.main-contents .bbq-part-2 .d-cont .d-row + .d-row {margin-top: 50px;}
+.main-contents .bbq-part-2 .d-cont .d-row div[class*='flt-'] {display: table-cell; box-sizing: border-box; vertical-align: middle;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-1 {width: 32%; text-align: right;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-1 p {font-weight: 600; line-height: 33px; color: #000;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-1 .nth-1 {font-size: 20px;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-1 .nth-2 {font-size: 33px;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-2 {width: 68%; padding-left: 53px; text-align: left;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list {}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li {position: relative; padding-left: 14px; font-size: 18px; line-height: 33px; word-break: keep-all; letter-spacing: -1px; color: #353534;}
+.main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li:before {content: ''; display: block; position: absolute; width: 5px; height: 5px; top: 15px; left: 0; border-radius: 50%; background: #c3a688;}
+/* 버튼 */
+.main-contents .bbq-part-2 .d-cont .btn-view {position: relative; display: inline-block; height: 40px; margin-top: 33px; padding: 0 68px 0 45px; font-size: 20px; font-weight: 500; line-height: 40px; color: #fff; background: #d0904b;}
+.main-contents .bbq-part-2 .d-cont .ic-rArrow:after {width: 6px; height: 6px; right: -11px; border-width: 3px; border-color: #fff;}
+
+/* 190130 품목보기 팝업 */
+#foodViewPop {}
+#foodViewPop .fc-point {color: #a61a1a;}
+#foodViewPop .pop-container {width: 400px; padding: 22px 40px 30px; background: #fff;}
+#foodViewPop .pop-container .pop-tit {font-size: 29px; font-weight: 800; line-height: 42px; color: #2e2e2e;}
+#foodViewPop .pop-container .pop-tit span {font-style: italic;}
+#foodViewPop .pop-container .pop-contents {}
+#foodViewPop .pop-container .pop-contents .p-0 {margin-top: 7px; font-size: 18px; line-height: 25px; word-break: keep-all; text-align: center; color: #2e2e2e;}
+#foodViewPop .pop-container .pop-contents .p-0 .s-0 {display: block; color: #b83030;}
+#foodViewPop .pop-container .pop-contents .food-list {margin-top: 20px; font-size: 16px; font-weight: 500; line-height: 26px; color: #2e2e2e;}
+#foodViewPop .pop-container .pop-contents .food-list li {display: table; width: 100%;}
+#foodViewPop .pop-container .pop-contents .food-list li span {display: table-cell; width: 30%; text-align: right;}
+#foodViewPop .pop-container .pop-contents .food-list li span:first-child {width: 70%; text-align: left;}

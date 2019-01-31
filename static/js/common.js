@@ -74,6 +74,33 @@ $(function () {
 	$("#wrap .wrapperin .btn-area .btn-a").on("click", function () {
 		$('#faq li').show();
 	});
+    
+    // 설날 & 조식 팝업
+    if( $('#newEvtPop').css('display') == 'block' ){
+         var newEvtPop = $('#newEvtPop');
+        
+        $('html').css({'overflow': 'hidden', 'height': '100%'});
+        newEvtPop.on('scroll', function(event) { 
+            event.preventDefault();     
+            event.stopPropagation();     
+            return false; 
+        });
+        
+        newEvtPop.find('.pop-evt-list').bxSlider({
+            auto : false,
+            pager : true,
+            controls : true,
+            speed : 500
+        });
+    }
+    
+    // 팝업 닫기
+    $('.btn-close, .btn-close-2').on('click', function(){
+        $(this).parents('.pop-wrap').hide();
+        
+        $('html').css({'overflow': 'auto', 'height': '100%'});
+        $(this).parents('.pop-wrap').off('scroll');
+    });
 });
 	
 function toggleOn(itm, type) {
@@ -91,4 +118,35 @@ function toggleOn(itm, type) {
 		});
 	}
 }
+
+// 팝업 열기
+function popOpen(popId){
+	var ht = $(window).height();
+    
+    $(popId).show();
+    $('html').css({'overflow': 'hidden', 'height': '100%'});
+    
+    var popCloseH = $(popId).find('a[class*="btn-close-"]').height();
+    var popConH = $(popId).find('.pop-container').outerHeight();
+    
+    if( (popConH+popCloseH) < ht ){
+        //console.log('no', popConH, (popConH+popCloseH), ht)
+        
+        $(popId).css({'height' : '100%'});
+        $(popId).find('.pop-container').css({'top' : '50%', 'margin-top' : '-'+(popConH/2)+'px'});
+    }else{
+        
+        $(popId).css({'height' : ht+'px'});
+    }
+    
+    $(popId).on('scroll', function(event) { 
+        event.preventDefault();     
+        event.stopPropagation();     
+        return false; 
+    });
+}
+
+
+
+
 
