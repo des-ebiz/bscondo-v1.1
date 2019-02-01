@@ -491,7 +491,7 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.tbn-area .bn-txt-box.amenity {padding: 12px 0; background: #fffce8;}
     
     /* 190130 팝업 */
-    .pop-wrap {z-index: 99; position: fixed; box-sizing: border-box; top: 0; left: 0;}
+    .pop-wrap {z-index: 99; position: fixed; box-sizing: border-box; top: 0; left: 0; background: none;} 
     .pop-wrap * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
     .pop-bg {overflow: hidden; overflow-y: scroll; width: 100%; height: 100%; padding-top: 82px; padding-bottom: 82px; background: rgba(0, 0, 0, 0.5);}
     .pop-wrap .pop-container {position: relative; box-sizing: border-box; margin: 0 auto;}

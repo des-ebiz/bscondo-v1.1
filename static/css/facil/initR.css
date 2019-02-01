@@ -25,6 +25,8 @@
 	.main-contents .d-part h3 .title_ico {display: block; margin: 0 auto;}
 	.main-contents .d-part:first-child {margin-top: 10px;}
 	.main-contents .p-txt {font-size: 13px; text-align: center; margin-bottom: 12px; letter-spacing: -0.5px;}
+    .main-contents .p-txt .fc-red {color: #880c19;}
+    .main-contents .p-txt .s-txt {font-size: 11px;}
 	.main-contents .basicImg {width: 100%;}
 	
 	.main-contents .bbq-part {position: relative;}
@@ -71,6 +73,7 @@
     .main-contents .bbq-part-2 {position: relative; margin-left: -2.2%; margin-right: -2.2%; padding: 21px 0 12px; text-align: center;}
     .main-contents .bbq-part-2 * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
     .main-contents .bbq-part-2 .fc-orange {color: #d46900;}
+    .main-contents .bbq-part-2 .fc-point {color: #df3636;}
     /* 상단 */
     .main-contents .bbq-part-2 .d-top {}
     .main-contents .bbq-part-2 .d-top strong {display: inline-block; padding: 5px 20px 4px; font-size: 13px; font-weight: 800; line-height: 13px; color: #303030; border-top: 1px solid #303030; border-bottom: 1px solid #303030;}
@@ -95,11 +98,23 @@
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list {}
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li {position: relative; padding-left: 6px; font-size: 12px; line-height: 18px; word-break: keep-all; letter-spacing: -1px; color: #353534;}
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li:before {content: ''; display: block; position: absolute; width: 3px; height: 3px; top: 8px; left: 0; border-radius: 50%; background: #c3a688;}
-    /* 버튼 */
-    .main-contents .bbq-part-2 .d-cont .btn-view {position: relative; display: inline-block; height: 24px; margin-top: 17px; padding: 0 35px 0 24px; font-size: 12px; font-weight: 500; line-height: 24px; color: #fff; background: #d0904b;}
-    .main-contents .bbq-part-2 .d-cont .ic-rArrow:after {width: 4px; height: 4px; top: -2px; right: -5px; border-width: 2px; border-color: #fff;}
     
-    /* 190130 품목보기 팝업 */
+    /* 190201 품목보기 추가 */
+    .main-contents .bbq-part-2.bbq-menu {padding-top: 0;}
+    .main-contents .bbq-part-2.bbq-menu .d-top {}
+    .main-contents .bbq-part-2.bbq-menu .d-top .p-0 {font-size: 14px; line-height: 20px;}
+    .main-contents .bbq-part-2.bbq-menu .d-top .p-0 .fc-orange {font-weight: 500;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont {width: 93%; margin: 0 auto; /*padding: 0 14px;*/}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-box {margin: 16px auto 0; padding: 6px 0 8px; border: 1px solid #d9d1ca;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list {position: relative; float: left; box-sizing: border-box; width: 50%; font-size: 10px; font-weight: 500; line-height: 22px; color: #353535;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li {position: relative; box-sizing: border-box; display: table; width: 100%; padding: 0 9px;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li span {display: table-cell; width: 30%; text-align: right;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li span:first-child {width: 70%; text-align: left;}
+    
+    
+    /* 190130 품목보기 팝업 + 버튼 */
+    /*.main-contents .bbq-part-2 .d-cont .btn-view {position: relative; display: inline-block; height: 24px; margin-top: 17px; padding: 0 35px 0 24px; font-size: 12px; font-weight: 500; line-height: 24px; color: #fff; background: #d0904b;}
+    .main-contents .bbq-part-2 .d-cont .ic-rArrow:after {width: 4px; height: 4px; top: -2px; right: -5px; border-width: 2px; border-color: #fff;}
     #foodViewPop {}
     #foodViewPop .fc-point {color: #a61a1a;}
     #foodViewPop .pop-container {width: 95%; max-width: 400px; padding: 19px 40px 22px; background: #fff;}
@@ -111,7 +126,7 @@
     #foodViewPop .pop-container .pop-contents .food-list {margin-top: 14px; font-size: 14px; font-weight: 500; line-height: 24px; color: #2e2e2e;}
     #foodViewPop .pop-container .pop-contents .food-list li {display: table; width: 100%;}
     #foodViewPop .pop-container .pop-contents .food-list li span {display: table-cell; width: 30%; text-align: right;}
-    #foodViewPop .pop-container .pop-contents .food-list li span:first-child {width: 70%; text-align: left;}
+    #foodViewPop .pop-container .pop-contents .food-list li span:first-child {width: 70%; text-align: left;}*/
   
 }
 
@@ -126,9 +141,13 @@
     .main-contents .bbq-part-2 .d-cont .d-row .flt-1 .nth-1 {font-size: 10px;}
     .main-contents .bbq-part-2 .d-cont .d-row .flt-1 .nth-2 {font-size: 16px;}
     
-    /* 190130 품목보기 팝업 */
-    #foodViewPop .pop-container {padding: 15px 30px 19px; background: #fff;}
-    #foodViewPop .pop-container .pop-contents .p-0 {margin-top: 4px; font-size: 15px;}
+    /* 190201 품목보기 추가 */
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-box {margin: 12px auto 0; padding: 3px 0 5px;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li {padding: 0 6px;}
+    
+    /* 190130 품목보기 팝업 + 버튼 */
+    /*#foodViewPop .pop-container {padding: 15px 30px 19px; background: #fff;}
+    #foodViewPop .pop-container .pop-contents .p-0 {margin-top: 4px; font-size: 15px;}*/
 }
 @media (min-width: 980px) {
 	.bx-wrapper .bx-controls-direction {margin-top: -21.5px;}
@@ -138,6 +157,8 @@
 	.main-contents .d-part h3 {}
 	.main-contents .d-part:first-child {margin-top: 10px;}
 	.main-contents .p-txt {font-size: 20px; text-align: center; margin-bottom: 18px;}
+    .main-contents .p-txt .fc-red {color: #880c19;}
+    .main-contents .p-txt .s-txt {font-size: 18px;}
 	.main-contents .basicImg {width: 100%;}
 	
 	.main-contents .bbq-part {position: relative;}
@@ -184,6 +205,7 @@
     .main-contents .bbq-part-2 {position: relative; margin: 0 auto; text-align: center; padding: 37px 0 20px;}
     .main-contents .bbq-part-2 * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
     .main-contents .bbq-part-2 .fc-orange {color: #d46900;}
+    .main-contents .bbq-part-2 .fc-point {color: #df3636;}
     /* 상단 */
     .main-contents .bbq-part-2 .d-top {}
     .main-contents .bbq-part-2 .d-top strong {display: inline-block; padding: 11px 35px 10px; font-size: 23px; font-weight: 800; line-height: 23px; color: #303030; border-top: 1px solid #303030; border-bottom: 1px solid #303030;}
@@ -208,11 +230,22 @@
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list {}
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li {position: relative; padding-left: 14px; font-size: 18px; line-height: 33px; word-break: keep-all; letter-spacing: -1px; color: #353534;}
     .main-contents .bbq-part-2 .d-cont .d-row .flt-2 .bbq-list li:before {content: ''; display: block; position: absolute; width: 5px; height: 5px; top: 15px; left: 0; border-radius: 50%; background: #c3a688;}
-    /* 버튼 */
-    .main-contents .bbq-part-2 .d-cont .btn-view {position: relative; display: inline-block; height: 40px; margin-top: 33px; padding: 0 68px 0 45px; font-size: 20px; font-weight: 500; line-height: 40px; color: #fff; background: #d0904b;}
-    .main-contents .bbq-part-2 .d-cont .ic-rArrow:after {width: 6px; height: 6px; right: -11px; border-width: 3px; border-color: #fff;}
     
-    /* 190130 품목보기 팝업 */
+    /* 190201 품목보기 추가 */
+    .main-contents .bbq-part-2.bbq-menu {padding-top: 0;}
+    .main-contents .bbq-part-2.bbq-menu .d-top {}
+    .main-contents .bbq-part-2.bbq-menu .d-top .p-0 .fc-orange {font-weight: 500;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont {padding: 0 40px;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-box {margin: 30px auto 0; padding: 16px 0 17px; border: 1px solid #d9d1ca;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list {position: relative; float: left; box-sizing: border-box; width: 50%; font-size: 20px; font-weight: 500; line-height: 42px; color: #353535;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li {position: relative; box-sizing: border-box; display: table; width: 100%; padding: 0 25px;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li span {display: table-cell; width: 30%; text-align: right;}
+    .main-contents .bbq-part-2.bbq-menu .d-cont .bbq-menu-list li span:first-child {width: 70%; text-align: left;}
+    
+    
+    /* 190130 품목보기 팝업 + 버튼 */
+    /*.main-contents .bbq-part-2 .d-cont .btn-view {position: relative; display: inline-block; height: 40px; margin-top: 33px; padding: 0 68px 0 45px; font-size: 20px; font-weight: 500; line-height: 40px; color: #fff; background: #d0904b;}
+    .main-contents .bbq-part-2 .d-cont .ic-rArrow:after {width: 6px; height: 6px; right: -11px; border-width: 3px; border-color: #fff;}
     #foodViewPop {}
     #foodViewPop .fc-point {color: #a61a1a;}
     #foodViewPop .pop-container {width: 400px; padding: 22px 40px 30px; background: #fff;}
@@ -222,9 +255,9 @@
     #foodViewPop .pop-container .pop-contents .p-0 {margin-top: 7px; font-size: 18px; line-height: 25px; word-break: keep-all; text-align: center; color: #2e2e2e;}
     #foodViewPop .pop-container .pop-contents .p-0 .s-0 {display: block; color: #b83030;}
     #foodViewPop .pop-container .pop-contents .food-list {margin-top: 20px; font-size: 16px; font-weight: 500; line-height: 26px; color: #2e2e2e;}
-    #foodViewPop .pop-container .pop-contents .food-list li {display: table; width: 100%;}
+    #foodViewPop .pop-container .pop-contents .food-list li {box-sizing: border-box; display: table; width: 100%;}
     #foodViewPop .pop-container .pop-contents .food-list li span {display: table-cell; width: 30%; text-align: right;}
-    #foodViewPop .pop-container .pop-contents .food-list li span:first-child {width: 70%; text-align: left;}
+    #foodViewPop .pop-container .pop-contents .food-list li span:first-child {width: 70%; text-align: left;}*/
 
     
 }
