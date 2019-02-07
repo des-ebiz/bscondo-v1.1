@@ -37,13 +37,14 @@
 
 /* 190130 체크인/아웃 서비스 자세히보기 버튼 추가 */
 /* ie8일때 간격 조정 */
-.main-contents .check-btn-box {position: relative; box-sizing: border-box; max-width: 480px; margin-top: 28px; padding: 12px 15px 11px 18px; text-align: left; background: #f7f7f7;}
+/*.main-contents .check-btn-box {position: relative; box-sizing: border-box; max-width: 480px; margin-top: 13px; padding: 12px 14px 11px 16px; text-align: left; background: #f7f7f7;}*/
+.main-contents .check-btn-box {position: absolute; box-sizing: border-box; width: 480px; left: 0; bottom: 100px; padding: 12px 14px 11px 16px; text-align: left; background: #f7f7f7;}
 .main-contents .check-btn-box .check-txt {}
-.main-contents .check-btn-box .check-txt p {line-height: 22px; letter-spacing: -1px; color: #333;}
+.main-contents .check-btn-box .check-txt p {line-height: 22px; letter-spacing: -1.2px; color: #333;}
 .main-contents .check-btn-box .check-txt p em {font-weight: bold; color: #365397;}
 .main-contents .check-btn-box .check-txt .p-1 {font-size: 16px;}
 .main-contents .check-btn-box .check-txt .p-2 {font-size: 15px;}
-.main-contents .check-btn-box .btn-view {position: absolute; display: inline-block; height: 30px; top:50%; right: 15px; margin-top: -15px; padding: 0 18px; font-size: 13px; line-height: 30px; color: #333; border: 1px solid #aaa; background: #fff;}
+.main-contents .check-btn-box .btn-view {position: absolute; display: inline-block; height: 30px; top:50%; right: 15px; margin-top: -15px; padding: 0 10px; font-size: 13px; line-height: 30px; color: #333; border: 1px solid #aaa; background: #fff;}
 
 .d-part.nth-2, .d-part.nth-4 {background: #f7f7f7;}
 

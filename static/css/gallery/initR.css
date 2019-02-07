@@ -99,7 +99,7 @@
 	.main-contents .drx_txt {font-size: 16px; text-align: left;}
 	.main-contents .drx_txt th,.drx_txt td {padding: 5px 5px; vertical-align: top; word-break: keep-all;}
 	.main-contents .drx_txt th {font-weight: bold; color: #474646; letter-spacing: -1px; width: 17%;}
-	.main-contents .drx_txt td {width: 83%; letter-spacing: -0.6px;}
+	.main-contents .drx_txt td {width: 83%; letter-spacing: -1px;}
     .main-contents .drx_txt td .t-point {display: inline-block; color: #fe1200;}
 	.main-contents .txt_Wr {padding: 10px 0;}
 	.main-contents .txt_Wr .d_txt {font-size: 16px; text-align: left; word-break: keep-all;}
@@ -111,9 +111,10 @@
 	.main-contents .btn-area .a-btn .rArrow:after {border-color: #fff; border-width: 4px; top: -1px; width: 8px; height: 8px; left: 5px;}
     
     /* 190130 체크인/아웃 서비스 자세히보기 버튼 추가 */
-    .main-contents .check-btn-box {position: relative; box-sizing: border-box; max-width: 480px; margin-top: 32px; padding: 14px 15px 13px 24px; text-align: left; background: #f7f7f7;}
+    /*.main-contents .check-btn-box {position: relative; box-sizing: border-box; max-width: 480px; margin-top: 18px; padding: 14px 15px 13px 20px; text-align: left; background: #f7f7f7;}*/
+    .main-contents .check-btn-box {position: absolute; box-sizing: border-box; width: 480px; left: 0; bottom: 100px; padding: 14px 15px 13px 20px; text-align: left; background: #f7f7f7;}
     .main-contents .check-btn-box .check-txt {}
-    .main-contents .check-btn-box .check-txt p {line-height: 22px; color: #333;}
+    .main-contents .check-btn-box .check-txt p {line-height: 22px; letter-spacing: -0.7px; color: #333;}
     .main-contents .check-btn-box .check-txt p em {font-weight: bold; color: #365397;}
     .main-contents .check-btn-box .check-txt .p-1 {font-size: 16px;}
     .main-contents .check-btn-box .check-txt .p-2 {font-size: 15px;}
