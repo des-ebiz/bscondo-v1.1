@@ -78,6 +78,7 @@ $(function () {
     // 설날 & 조식 팝업
     if( $('#newEvtPop').css('display') == 'block' ){
          var newEvtPop = $('#newEvtPop');
+         var newEvtPopList = newEvtPop.find('.pop-evt-list');
         
         $('html').css({'overflow': 'hidden', 'height': '100%'});
         newEvtPop.on('scroll', function(event) { 
