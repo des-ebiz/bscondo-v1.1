@@ -86,12 +86,25 @@ $(function () {
             return false; 
         });
         
-        newEvtPop.find('.pop-evt-list').bxSlider({
-            auto : false,
-            pager : true,
-            controls : true,
-            speed : 500
-        });
+        
+        if( newEvtPop.find('.pop-evt-list > li').length == '1' ){
+            //console.log('one')
+            newEvtPopList.bxSlider({
+                mode : 'fade',
+                auto : false,
+                pager : true,
+                controls : true,
+                speed : 500
+            });
+        }else{
+            newEvtPopList.bxSlider({
+                mode : 'horizontal',
+                auto : false,
+                pager : true,
+                controls : true,
+                speed : 500
+            });
+        }
     }
     
     // 팝업 닫기
