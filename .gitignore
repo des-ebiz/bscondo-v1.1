@@ -3,6 +3,17 @@ _bak/
 _document/
 _draft/
 _work/
+_media/
+_tmp/
+img/
+.sass-cache/
+
+#fontFile
+*.ttf
+*.woff
+*.woff2
+*.eot
+*.otf
 
 #sftpFile, zip∆ƒ¿œ
 *.json
@@ -60,6 +71,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-view/gallery/index.html
-view/gallery/index.html
-view/gallery/index.html
