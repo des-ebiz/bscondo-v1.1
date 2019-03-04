@@ -20,10 +20,11 @@ $(function () {
 		}, 800);
 		event.preventDefault();
 	});
+    
 	$('#main-contents .menu_tap a').bind('click', function (event) {
 		var $_anchor = $(this);
 		$('html, body').stop().animate({
-			scrollTop: $($_anchor.attr('href')).offset().top - 80
+			scrollTop: $($_anchor.attr('href')).offset().top - 100
 		}, 800);
 		event.preventDefault();
 	});
@@ -47,6 +48,16 @@ $(function () {
 		$(this).toggleClass('active');
 		$('#gNav-m').toggleClass('active');
 	});
+    
+	// 모바일 콘텐츠 서브메뉴
+	var menuCon = $(".menu_tap");
+	var menuConLi = $(".menu_tap").find('li');
+    if( menuCon.css('display') == 'block' ) {
+        var menuConLen = menuConLi.length;
+        
+        menuConLi.css({'width' : (100/menuConLen)+'%'});
+    }
+    
 	
 	//FAQ 노출, 질문 펼치기 및 닫기
 	$("#faq-a").on('click', function() {

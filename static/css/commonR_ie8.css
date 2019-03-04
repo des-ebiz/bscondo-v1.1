@@ -12,30 +12,37 @@ display: block !important;
 .header.on .hd-area [class^=gNavDep] {z-index: -1;}
 .header .hd-area {position: relative;}
 .header .hd-area .gLogo {position: absolute; top: 14px; left: 50px; display: inline-block;}
-.header .hd-area .gNav {float: right; top: 0px;}
-.header .hd-area .gNav .gnb {text-align: center; float: right;}
+.header .hd-area .gNav {width: 980px; margin: 0 auto; line-height: 0;}
+.header .hd-area .gNav .gnb {display: inline-block; text-align: center; }
 
 .header .hd-area .gNav .gnb > li {padding-top: 0;}
-.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 20px; height: 90px; line-height: 90px; font-size: 20px; color: #ffffff; font-weight: 600;}
+.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 15px; height: 91px; line-height: 91px; font-size: 20px; color: #ffffff; font-weight: 600;}
 .header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
-.header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
+.header .hd-area .gNav .gnb > li.nth-6 {position: absolute; right: 0; display: block; padding-top: 0; background: #ecb84a;}
 .header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
 .header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
-.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 91px; height: 40px; background: #363032; box-sizing: border-box;}
 .header .hd-area [class^=gNavDep] {height: 50px;}
 .header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
 .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
 .header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
-.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
-.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 50px; margin-left: 50px;  color: #fff; font-size: 17px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {position: relative; display: inline-block;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; position: relative; display: block; line-height: 50px; margin-left: 50px;  color: #fff; font-size: 17px;}
 .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
 .header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
 
 .header.type-2 .hd-area .gNav .gnb > li {padding-top: 40px;}
 .header.type-2  .hd-area .gNav .gnb > li > a {height: 50px; line-height: 50px;}
+.header.type-2 .hd-area .gNav .gnb > li.nth-6 {padding-top: 0;}
+    
+/* 메뉴 수정 및 event 추가 */
+.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] .evt {position: relative; display: inline-block; margin: 2px 5px 0 0; padding: 0 3px; height: 18px; font-size: 11px; line-height: 18px; font-weight: bold; vertical-align: middle; color: #fff; border-radius: 2px; background: #ff6c00;}
+    .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] .evt + a {display: inline-block;}
 
-.header .d1 {position: absolute; right: 134px; top: 15px;}
-.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+.header .d1 {position: absolute; width: 980px; top : 13px; left: 50%; margin-left: -490px; text-align: right;}
+.header .d1 .faq-a {display: inline-block !important; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+/*.header .d1 {position: absolute; right: 134px; top: 15px;}
+.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}*/
 
 .faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}
 

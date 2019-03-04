@@ -78,11 +78,11 @@ body, a {color: #2b2b2b;}
 .header {z-index: 60;}
 .header .hd-area {position: relative; background: url(http://img.bscondo.co.kr/header_bg.jpg) no-repeat center top; -webkit-background-size: cover;
 background-size: cover; text-align: center; height: 90px; /*height: 250px; border-bottom: 1px solid #3b3b3b;*/}
-.header .hd-area .glb {position: fixed; height: 90px; z-index: 1; top: 0px; width: 100%; background: #221e1f; border-bottom: 0; /*border-bottom: 1px solid #fff;*/}
+.header .hd-area .glb {position: fixed; height: 91px; z-index: 1; top: 0px; width: 100%; background: #221e1f; border-bottom: 0; /*border-bottom: 1px solid #fff;*/}
 /*.header .hd-area .glb {position: relative; border-bottom: 1px solid #fff; height: 90px; z-index: 1;}
 .header.on .hd-area .glb {position: fixed; top: 0px; width: 100%; background: #221e1f; border-bottom: 0;}*/
 
-.rWing {position: fixed; top: 220px; z-index: 65; left: 50%; margin-left: 520px;}
+.rWing {position: fixed; top: 220px; z-index: 59; left: 50%; margin-left: 520px;}
 .rWing img {display:block; margin: 0 auto 1px;}
 /* .rWing img + img {display: block; margin-top:10px;} */
 .m-rWing {z-index:65; position:absolute; width:100px; /*height:71px;*/ right:19px; margin-top:52%;}
@@ -94,6 +94,7 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 }
 
 .footer {margin-top: 80px;}
+
 @media (max-width: 979px) {
 	.container {padding-left: 2%; padding-right: 2%;}
 	.container-f {width: 100%;}
@@ -121,11 +122,13 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 		transform: rotate(45deg);
 	}
 	.gNav-m {display: none; position: absolute; top: 58px; right: 0; background: #363032;}
-	.gNav-m.active {display: block;}
+	.gNav-m.active {display: block; width: 260px;}
+    .gNav-m .gnb-m {padding-bottom: 11px;}
 	.gNav-m .gnb-m > li > a {display: block; position: relative; color: #fff; font-size: 13px; padding: 14px 32px; text-align: right;}
-	.gNav-m .gnb-m > li > a:hover {background: #ecb84a; color: #fff;}
+	/*.gNav-m .gnb-m > li > a:hover {background: #ecb84a; color: #fff;}*/
 	.gNav-m .gnb-m > li:last-child a {background: #ecb84a; color: #fff;}
 	/*.header.on .gNav-m {top: 58px;}*/
+	.gNav-m .gnb-m > li.lst a {background: none;}
 	
 	.header .d1 {position: absolute; right: 200px; top: 28px;}
 	.header .d1 .mFaq-a {position: absolute; left: 38px; top: -13px; display: block; width: 96px; box-sizing: border-box; color:#fff; border:1px solid #fff; padding: 6px 0px 5px;  font-size: 13px; font-weight: bold; text-align: center; text-indent: -2px;}
@@ -184,7 +187,15 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.privacy-bg .cm-s .d-cont .title {display: block; margin-top: 10px;}
 	.privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
 	.term-warp {}	
-
+    
+    /* 서브메뉴 */
+	.main-contents .menu_tap {margin: 0 auto; position: fixed; box-sizing: border-box; z-index: 52; background: #fff; width: 100%; padding-top: 60px; padding-bottom: 4px; top: 0; left:0;}
+	.main-contents .menu_tap ul {width: 96%; position: relative; display: table; margin: 0 auto; text-align: center;}
+	.main-contents .menu_tap ul li {display: table-cell; border: 1px solid #aeaeae; border-right: none; box-sizing: border-box; width: 20%; height: 32px; vertical-align: middle;}
+	.main-contents .menu_tap ul li:last-child {border-right: 1px solid #aeaeae;}
+	.main-contents .menu_tap ul li a {font-size: 11px; line-height: 15px; text-align: center; display: block; letter-spacing: -0.9px; color: #474646; font-weight: 600;}
+	.main-contents .menu_tap ul li.on a {color:#e56017;}
+    
 	/* 단체예약 문의 팝업 */
 /*	#contact-bg {z-index: 51;}*/
 	.etc-sec .contact-pop hr {width: 100%;}
@@ -279,13 +290,16 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
     .pop-wrap .btn-box .btn-close span {}
     
 }
+
 @media (max-width: 767px) {
 	.rWing {display: none;}
 	.m-rWing {display: block;}
 }
+
 @media (min-width: 768px) {
 	.m-rWing {display: none;}
 }
+
 @media (max-device-width: 320px) {
 
 	.layer-pop-bg {position: fixed; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
@@ -314,30 +328,35 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.header.on .hd-area .glb:after {content: ""; display: block; width: 100%; bottom: 0; box-shadow: 0 1px 8px 2px rgba(0,0,0,.4); z-index: 1;}
 	.header.on .hd-area [class^=gNavDep] {z-index: -1;}
 	.header .hd-area {position: relative;}
-	.header .hd-area .gLogo {position: absolute; top: 14px; left: 50px; display: inline-block;}
-	.header .hd-area .gNav {float: right; top: 0px;}
-	.header .hd-area .gNav .gnb {text-align: center; float: right;}
+	.header .hd-area .gLogo {position: absolute; top: 14px; left: 30px; display: inline-block;}
+	.header .hd-area .gNav {width: 980px; margin: 0 auto; line-height: 0;}
+	.header .hd-area .gNav .gnb {display: inline-block; text-align: center; }
 
     .header .hd-area .gNav .gnb > li {padding: 0;}
-	.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 13px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
+	.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 10px; height: 91px; line-height: 91px; font-size: 14px; color: #ffffff; font-weight: 600;}
 	.header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
-	.header .hd-area .gNav .gnb > li.nth-6 {display: block; padding-top: 0; background: #ecb84a;}
-	.header .hd-area .gNav .gnb > li.nth-6 a  {height: 90px; line-height: 90px; color: #fff;}
+	.header .hd-area .gNav .gnb > li.nth-6 {position: absolute; right: 0; display: block; padding-top: 0; background: #ecb84a;}
+	.header .hd-area .gNav .gnb > li.nth-6 a  {height: 91px; line-height: 91px; color: #fff;}
 	.header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
-	.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+	.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 91px; height: 40px; background: #363032; box-sizing: border-box;}
 	.header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
 	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
 	.header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
-	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
-	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {position: relative; display: inline-block; vertical-align: middle;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; position: relative; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px; vertical-align: middle;}
 	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
 	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
+    /* 메뉴 수정 및 event 추가 */
+	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] .evt {position: relative; display: inline-block; margin: 2px 5px 0 0; padding: 0 3px; height: 18px; font-size: 11px; line-height: 18px; font-weight: bold; vertical-align: middle; color: #fff; border-radius: 2px; background: #ff6c00;}
+    .header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] .evt + a {display: inline-block;}
 	
-	.header .d1 {position: absolute; right: 94px; /* right: 584px; */ top: 17px;}
-	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 13px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+	.header .d1 {position: absolute; width: 642px; top : 13px; left: 50%; margin-left: -321px; text-align: right;}
+	.header .d1 .faq-a {display: inline-block !important; color: #fff; border: 1px solid #fff; font-size: 13px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
     
     .header.type-2 .hd-area .gNav .gnb > li {padding-top: 30px;}
 	.header.type-2 .hd-area .gNav .gnb > li > a {height: 60px; line-height: 60px;}
+	.header.type-2 .hd-area .gNav .gnb > li.nth-6 {padding-top: 0;}
+	.header.type-2 .hd-area .gNav .gnb > li.nth-6 a  {height: 91px; line-height: 91px;}
     
     
     
@@ -511,18 +530,23 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
     
     
 }
-@media (min-width: 981px) and (max-width: 1024px) {
-	.header .d1 {right: 80px;}
+
+@media (min-width: 981px) and (max-width: 1024px) {s
 	.header .hd-area .gNav .gnb > li > a {padding: 0 8px;}	
 }
+
 @media (min-width: 1370px) {
+	.header .hd-area .gLogo {left: 50px;}
     .header .hd-area .gNav .gnb > li {padding-top: 0;}
-	.header .hd-area .gNav .gnb > li > a {height: 90px; padding: 0 20px; font-size: 20px; line-height: 90px;}
+	.header .hd-area .gNav .gnb > li > a {height: 91px; padding: 0 18px; font-size: 20px; line-height: 90px;}
 	.header .hd-area [class^=gNavDep] {height: 50px;}
 	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
-	
+    
+	/*
 	.header .d1 {position: absolute; right: 134px; top: 15px;}
-	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
+	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 4px 8px 6px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}*/
+    .header .d1 {width: 980px; margin-left: -490px;}
+	.header .d1 .faq-a {font-size: 15px; line-height: 1.1;}
     
     .header.type-2 .hd-area .gNav .gnb > li {padding-top: 40px;}
 	.header.type-2  .hd-area .gNav .gnb > li > a {height: 50px; line-height: 50px;}

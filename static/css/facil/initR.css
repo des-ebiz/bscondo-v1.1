@@ -19,8 +19,10 @@
 	.bx-wrapper .bx-prev {left: 10px;}
 	.bx-wrapper .bx-next {right: 10px;}
 	
+    
 	.main-contents.cm-s {}
 	.main-contents .d-part {margin-top: 30px;}
+    .main-contents .menu_tap + .d-part {margin-top: 50px;}
 	.main-contents .d-part h3 {font-size: 20px; margin-bottom: 5px; text-align: center;}
 	.main-contents .d-part h3 .title_ico {display: block; margin: 0 auto;}
 	.main-contents .d-part:first-child {margin-top: 10px;}
@@ -70,7 +72,7 @@
 	.main-contents .bbq-part .d-bottom .pl-1 {padding-left: 13px;}
     
 	/* 190130 바베큐 리뉴 */
-    .main-contents .bbq-part-2 {position: relative; margin-left: -2.2%; margin-right: -2.2%; padding: 21px 0 12px; text-align: center;}
+    .main-contents .bbq-part-2 {position: relative; margin-left: -2.2%; margin-right: -2.2%; padding: 43px 0 12px; text-align: center;}
     .main-contents .bbq-part-2 * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; letter-spacing: -0.5px;}
     .main-contents .bbq-part-2 .fc-orange {color: #d46900;}
     .main-contents .bbq-part-2 .fc-point {color: #df3636;}

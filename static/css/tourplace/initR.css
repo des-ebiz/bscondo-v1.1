@@ -1,13 +1,8 @@
 @charset 'utf-8';
 
 @media (max-width: 979px) {
-	.main-contents .menu_tap {margin: 0 auto; position: fixed; z-index: 52; background: #fff; width: 100%; padding-top: 60px; top: 0; left:0;}
-	.main-contents .menu_tap ul {width: 96%; position: relative; margin: 0 auto;}
-	.main-contents .menu_tap ul li {float: left; border: 1px solid #aeaeae; border-right: none; box-sizing: border-box; width: 20%; height: 30px; line-height: 30px;}
-	.main-contents .menu_tap ul li:last-child {border-right: 1px solid #aeaeae;}
-	.main-contents .menu_tap ul li a {font-size: 11px; text-align: center; display: block; letter-spacing: -0.8px; color: #474646; font-weight: 600;}
-	.main-contents .menu_tap ul li.on a {color:#e56017;}
 	
+    .main-contents .tourplace {}
 	.main-contents .tp-tit {position:relative; padding-top:35px; font-size:20px; font-weight:bold; text-align:center; color:#474646;}
 	.main-contents .tp-area {position:relative; margin:0 2%; padding:15px 0 20px; border-top:1px solid #dedede;}
 	.main-contents .tp-area.fir {border-top:0;}

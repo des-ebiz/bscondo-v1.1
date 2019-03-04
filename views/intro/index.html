@@ -16,10 +16,12 @@
 	<link rel="stylesheet" href="http://www.ocean2you.co.kr/fonts/nanumsquare/nanumsquare.css">
 
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR.css">
-	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/intro/initR-v1.1.css">
-
 	<!--<link rel="stylesheet" type="text/css" href="../../static/css/commonR.css">--> 
+	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/intro/initR-v1.1.css">
 	<!--<link rel="stylesheet" type="text/css" href="../../static/css/intro/initR-v1.1.css">-->
+
+	<!-- 190226 css 추가 -->
+	<link rel="stylesheet" href="http://static.ramadapt.co.kr/css/totalweb.css">
 	
 	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -28,6 +30,8 @@
 	
 	<script src="http://static.bscondo.co.kr/js/common.js"></script>
 	<!--<script src="../../static/js/common.js"></script>-->
+	<!-- 190226 js 추가 -->
+	<script src="http://static.ramadapt.co.kr/js/totalweb.js"></script>
 
 	<script>
 		WebFont.load({
@@ -135,8 +139,9 @@
 			</div>
 		</div>
 	
-		
-		<header class="header" id="gnb-header">
+	
+	    <!-- type-2 무시/ 메인일때만 추가되도록 개발작업 되어있는 멀티 클래스 -->	
+		<header class="header type-2" id="gnb-header">
 			<div class="hd-top">		
 			</div>
 			<div class="hd-area clr">
@@ -148,6 +153,7 @@
 						<a class="mFaq-a show-xs" id="mFaq-a" href="#"><span><img src="http://img.ocean2you.co.kr/renew/m_icon.png">이벤트 안내</span></a>
 					</div>
 				
+                    <!-- 190226 메뉴 수정 -->
 					<nav class="gNav show-md">
 						<ul class="gnb clr">
 							<li class="nth-1 on">
@@ -167,16 +173,31 @@
 								</div>
 							</li>
 							<li class="nth-3">
-								<a href="../facil/index.html">부대시설</a>
+								<a href="../dining/index.html">다이닝</a>
+								<div class="gNavDep2">
+									<ul class="gnbDep2 clr">
+										<li><spna class="evt">EVENT</spna><a href="#none">한식당</a></li>
+										<li><a href="#none">바베큐장</a></li>
+									</ul>
+								</div>
 							</li>
 							<li class="nth-4">
-								<a href="../group/index.html">단체문의</a>
+								<a href="../facil/index.html">연회&amp;부대시설</a>
+								<div class="gNavDep2">
+									<ul class="gnbDep2 clr">
+										<li><a href="#none">대식당</a></li>
+										<li><a href="#none">연회장</a></li>
+										<li><a href="#none">분임토의실 (1~6호실)</a></li>
+										<li><a href="#none">노래방</a></li>
+										<li><a href="#none">편의점</a></li>
+									</ul>
+								</div>
 							</li>
 							<li class="nth-5">
 								<a href="../waycome/index.html">오시는길</a>
 							</li>
 							<!-- 20180212 메뉴 추가 -->
-							<li class="nth-5">
+							<li class="nth-7">
 								<a href="../tourplace/index.html">주변관광지</a>
 								<div class="gNavDep2">
 									<ul class="gnbDep2 clr">
@@ -188,13 +209,30 @@
 									</ul>
 								</div>
 							</li>
-							<li>
+							<li class="nth-8">
+								<a href="../group/index.html">단체문의</a>
+							</li>
+							<li class="nth-9">
+								<a href="#none">장기/단기숙박</a>
+							</li>
+							<!--<li>
 								<a href="../reservation/index.html">예약확인</a>
-							</li>
-							<li class="nth-6">
+							</li>-->
+							<!--<li class="nth-6">
 								<a href="../reservation/index.html">객실예약</a>
-							</li>
+							</li>-->
 						</ul>
+                       
+                        <!-- 190226 예약하기 메뉴 추가 -->
+                        <div class="bk-menu bs">
+                            <a href="#none" class="btn-bk2">예약하기</a>
+                            <ul class="bk-list">
+                                <li class="item item-1 fst"><a href="#none">객실예약</a></li>
+                                <li class="item item-2"><a href="#none">예약확인</a></li>
+                                <li class="item item-3"><a href="#none">단체예약</a></li>
+                                <li class="item item-4"><a href="#none">장기/단기예약</a></li>
+                            </ul>
+                        </div>
 					</nav>
 					
 					
@@ -205,6 +243,15 @@
 					</button>
 					
 					<nav class="gNav-m hidden-md" id="gNav-m">
+                        <!-- 190226 예약하기 메뉴 추가 -->
+                        <ul class="bk-menu-m bs clr">
+                            <li>
+                                <a href="#none" target="_blank">객실예약</a>
+                            </li>
+                            <li>
+                                <a href="#none">예약확인</a>
+                            </li>	
+                        </ul>
 						<ul class="gnb-m clr">
 							<li>
 								<a href="../intro/index.html">콘도소개</a>
@@ -212,8 +259,11 @@
 							<li>
 								<a href="../gallery/index.html">객실안내</a>
 							</li>
+							<li >
+								<a href="../dining/index.html">다이닝</a>
+							</li>
 							<li>
-								<a href="../facil/index.html">부대시설</a>
+								<a href="../facil/index.html">연회&amp;부대시설</a>
 							</li>
 							<li>
 								<a href="../group/index.html">단체문의</a>
@@ -225,11 +275,8 @@
 							<li>
 								<a href="../tourplace/index.html">주변관광지</a>
 							</li>
-							<li>
-								<a href="../reservation/index.html">예약확인</a>
-							</li>
-							<li>
-								<a href="../reservation/index.html">객실예약</a>
+							<li class="lst">
+								<a href="#none">장기/단기예약</a>
 							</li>
 						</ul>
 					</nav>
@@ -252,11 +299,11 @@
 		-->
 		
 		<!-- 190130 설날 & 조식 팝업 -->
-        <div class="pop-wrap" id="newEvtPop" style="display: block;">
+        <div class="pop-wrap" id="newEvtPop" style="display: none;">
             <div class="pop-container">
                 <div class="pop-contents">
                    <ul class="pop-evt-list">
-                       <li class="nth-1">
+                       <!--<li class="nth-1">
                             <figure>
                                 <img src="http://img.bscondo.co.kr/pop/newYear.jpg" alt="2019 황금돼지 (기해년) 설날 대축제 한마당">
                             </figure>
@@ -271,7 +318,7 @@
                                 <span class="s-2">02 전통놀이</span>
                                 <span class="s-3">03 복주머니 & 연날리기</span>
                             </p>
-                       </li>
+                       </li>-->
                        <li class="nth-2">
                             <p class="bf-tit"><img src="http://img.bscondo.co.kr/pop/freeBf_tit.png" alt="인생 숙박 ! 인생 조식 !"></p>
                             <p class="p-0">
