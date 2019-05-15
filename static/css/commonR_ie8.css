@@ -214,3 +214,5 @@ display: block !important;
 .pop-wrap .btn-box .btn-close {margin-left: 5%;}
 .pop-wrap .btn-box .btn-close span {}
 
+/* bscondo 영업중지 팝업 */
+.pop-container.bsclose .pop-wrapper > a.hidden-xs {display: table-cell !important; vertical-align: middle;}
